@@ -445,105 +445,6 @@ def ajouter_contrainte_pause_dejeuner_groupe(
                 model.Add(pause_valide == 1)
 
 
-def debug_groupes_par_seance(seances):
-    """
-    Fonction de débogage pour afficher le nombre de groupes par séance.
-    Permet d'identifier les séances multi-groupes qui pourraient causer des problèmes.
-    """
-    print("\n" + "=" * 70)
-    print("DÉBOGAGE : NOMBRE DE GROUPES PAR SÉANCE")
-    print("=" * 70)
-
-    for s in seances:
-        # Déterminer les groupes concernés par cette séance
-        multi_groupe = False
-        try:
-            # Tenter d'accéder aux groupes comme une liste
-            if hasattr(s, "groupes"):
-                if isinstance(s.groupes, list):
-                    groupes_list = s.groupes
-                    multi_groupe = True
-                else:
-                    groupes_list = [s.groupes]
-            else:
-                # Fallback si l'attribut groupes n'existe pas
-                print(
-                    f"⚠️ ERREUR: La séance {s.id_seance if hasattr(s, 'id_seance') else 'ID inconnu'} n'a pas d'attribut 'groupes'"
-                )
-                continue
-        except Exception as e:
-            print(f"⚠️ ERREUR lors de l'accès aux groupes de la séance: {str(e)}")
-            continue
-
-        # Récupérer les noms des groupes avec gestion d'erreurs
-        noms_groupes = []
-        for g in groupes_list:
-            try:
-                if hasattr(g, "nom"):
-                    noms_groupes.append(g.nom)
-                elif hasattr(g, "id_groupe"):
-                    noms_groupes.append(f"Groupe {g.id_groupe}")
-                else:
-                    noms_groupes.append("Groupe sans nom/ID")
-            except Exception as e:
-                noms_groupes.append("Erreur d'accès au groupe")
-
-        # Récupérer le nom du cours avec gestion d'erreurs
-        try:
-            if hasattr(s, "cours"):
-                if hasattr(s.cours, "intitule"):
-                    nom_cours = s.cours.intitule
-                elif hasattr(s.cours, "id") or hasattr(s.cours, "id_cours"):
-                    id_cours = getattr(s.cours, "id", None) or getattr(
-                        s.cours, "id_cours", "inconnu"
-                    )
-                    nom_cours = f"Cours {id_cours}"
-                else:
-                    nom_cours = "Cours sans nom"
-            else:
-                nom_cours = "Pas d'information sur le cours"
-        except Exception as e:
-            nom_cours = f"Erreur d'accès au cours: {str(e)}"
-
-        # Récupérer le nom/ID de l'enseignant avec gestion d'erreurs
-        try:
-            if hasattr(s, "cours") and hasattr(s.cours, "enseignant"):
-                if hasattr(s.cours.enseignant, "nom"):
-                    nom_enseignant = s.cours.enseignant.nom
-                elif hasattr(s.cours.enseignant, "id"):
-                    nom_enseignant = s.cours.enseignant.id
-                else:
-                    nom_enseignant = "Enseignant sans nom/ID"
-            else:
-                nom_enseignant = "Pas d'information sur l'enseignant"
-        except Exception as e:
-            nom_enseignant = f"Erreur d'accès à l'enseignant: {str(e)}"
-
-        # Récupérer l'ID de la séance avec gestion d'erreurs
-        try:
-            id_seance = s.id_seance if hasattr(s, "id_seance") else "ID inconnu"
-        except Exception as e:
-            id_seance = f"Erreur d'accès à l'ID: {str(e)}"
-
-        # Récupérer le type de séance avec gestion d'erreurs
-        try:
-            type_seance = s.type_seance if hasattr(s, "type_seance") else "Type inconnu"
-        except Exception as e:
-            type_seance = f"Erreur d'accès au type: {str(e)}"
-
-        # Afficher les informations
-        print(f"Séance ID: {id_seance}")
-        print(f"  Cours: {nom_cours}")
-        print(f"  Type: {type_seance}")
-        print(f"  Enseignant: {nom_enseignant}")
-        print(f"  Multi-groupe: {'Oui' if multi_groupe else 'Non'}")
-        print(f"  Nombre de groupes: {len(groupes_list)}")
-        print(f"  Groupes: {', '.join(noms_groupes)}")
-        print("-" * 50)
-
-    print("=" * 70)
-
-
 def ajouter_toutes_contraintes(
     model,
     seance_vars,
@@ -576,8 +477,6 @@ def ajouter_toutes_contraintes(
         pause_fin: Indice du créneau de fin de la pause déjeuner (défaut: 12 = 14h00)
     """
 
-    # Débogage : Afficher les groupes par séance
-    debug_groupes_par_seance(seances)
     # 1. Chaque séance doit être planifiée exactement une fois
     print("Ajout de la contrainte de séance unique...")
     ajouter_contrainte_seance_unique(

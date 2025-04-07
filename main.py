@@ -531,6 +531,9 @@ class EmploiDuTemps:
 
         # Pour chaque séance, on crée des variables pour tous les créneaux de début possibles
         print("Création des variables de séance...")
+        # Pour chaque séance, on crée des variables pour tous les créneaux de début possibles
+
+        print("Création des variables de séance...")
         for s in seances:
             # Récupérer les propriétés de la séance
             cours = s.cours
@@ -579,24 +582,11 @@ class EmploiDuTemps:
                             effectif_total = 0
                             if isinstance(groupe, list):
                                 # Si c'est une liste de groupes (cas des CM)
-                                print(
-                                    f"Séance {s.id_seance} - Traitement d'une liste de {len(groupe)} groupes"
-                                )
                                 for g in groupe:
                                     effectif_total += g.effectif
-                                    print(
-                                        f"  - Ajout du groupe {g.id_groupe} ({g.nom}) avec effectif {g.effectif}"
-                                    )
                             else:
                                 # Si c'est un seul groupe (cas des TD)
                                 effectif_total = groupe.effectif
-                                print(
-                                    f"Séance {s.id_seance} - Groupe unique {groupe.id_groupe} avec effectif {groupe.effectif}"
-                                )
-
-                            print(
-                                f"Séance {s.id_seance} - Effectif total: {effectif_total}, Capacité salle {salle.id}: {salle.effectif_max}"
-                            )
 
                             # Vérifier si la salle peut accueillir le groupe
                             if salle.effectif_max >= effectif_total:
