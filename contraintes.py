@@ -80,117 +80,93 @@ def ajouter_contrainte_groupe_unicite(
     nb_creneaux_30min,
     groupes,
 ):
-    """
-    Contrainte 3: Un groupe ne peut pas suivre deux séances qui se chevauchent.
-    Un groupe parent et ses sous-groupes ne peuvent pas avoir cours en même temps.
-    """
-    # Créer un dictionnaire pour stocker les relations parent-enfant
+    """Version optimisée de la contrainte d'unicité pour les groupes."""
+
+    # 1. PRÉ-CALCULS (effectués une seule fois)
+    # Calculer et stocker les durées pour éviter les calculs répétés
+    durees_creneaux = {s.id_seance: int(s.duree * 60 / 30) for s in seances}
+
+    # Créer les relations groupe-séance pour éviter de parcourir toutes les séances chaque fois
+    groupes_par_seance = {}
+    for s in seances:
+        if hasattr(s, "groupes") and isinstance(s.groupes, list):
+            groupes_par_seance[s.id_seance] = [
+                g.id_groupe for g in s.groupes if hasattr(g, "id_groupe")
+            ]
+
+    # Créer les relations parent-enfant
     relations_groupes = {}
-
-    # Créer un dictionnaire inverse pour trouver facilement le parent d'un groupe
-    relations_inverse = {}
-
     for g in groupes:
         if hasattr(g, "sous_groupes") and g.sous_groupes:
-            sous_groupes_ids = [sg.id_groupe for sg in g.sous_groupes]
-            relations_groupes[g.id_groupe] = sous_groupes_ids
+            relations_groupes[g.id_groupe] = [sg.id_groupe for sg in g.sous_groupes]
 
-            for sg in g.sous_groupes:
-                relations_inverse[sg.id_groupe] = g.id_groupe
+    # Index inverse: séances par groupe
+    seances_par_groupe = {}
+    for s_id, grp_ids in groupes_par_seance.items():
+        for g_id in grp_ids:
+            if g_id not in seances_par_groupe:
+                seances_par_groupe[g_id] = []
+            seances_par_groupe[g_id].append(s_id)
 
-    # Pour chaque créneau horaire, vérifier les conflits
-    total_contraintes_ajoutees = 0
+    # 2. TRAITEMENT OPTIMISÉ
+    contraintes_ajoutees = 0
 
-    for s_idx in range(len(semaines)):
-        semaine = semaines[s_idx]
+    # Créer un index des variables de séance par semaine, jour, groupe
+    # Cela permet d'éviter de parcourir toutes les séances à chaque itération
+    var_index = {}
 
-        for j in range(nb_jours):
-            # Vérifier si le jour est disponible (non férié)
-            if calendrier[semaine][j] is None:
-                continue
+    # Construire cet index
+    for (s_id, s_idx, j, cr_debut, sa_id), var in seance_vars.items():
+        if s_id in groupes_par_seance:
+            duree = durees_creneaux[s_id]
+            for g_id in groupes_par_seance[s_id]:
+                key = (s_idx, j, g_id)
+                if key not in var_index:
+                    var_index[key] = []
+                # Stocker la variable avec ses créneaux d'occupation
+                var_index[key].append((var, cr_debut, cr_debut + duree - 1, s_id))
 
+    # Ajouter les contraintes pour chaque semaine/jour/groupe
+    for (s_idx, j, g_id), variables in var_index.items():
+        # Vérifier si le jour est disponible
+        if calendrier[semaines[s_idx]][j] is None:
+            continue
+
+        # 1. Contrainte: un groupe ne peut pas avoir plus d'une séance à un moment donné
+        if len(variables) > 1:
+            # Pour chaque créneau, vérifier les chevauchements
             for cr in range(nb_creneaux_30min):
-                # Dictionnaire pour stocker les séances par groupe
-                groupes_seances = {}
+                seances_au_creneau = []
+                for var, debut, fin, s_id in variables:
+                    if debut <= cr <= fin:
+                        seances_au_creneau.append(var)
 
-                # Parcourir toutes les séances
-                for s in seances:
-                    duree_creneaux = int(s.duree * 60 / 30)
+                if len(seances_au_creneau) > 1:
+                    model.Add(sum(seances_au_creneau) <= 1)
+                    contraintes_ajoutees += 1
 
-                    # Pour chaque groupe participant à cette séance
-                    try:
-                        if not hasattr(s, "groupes") or not isinstance(s.groupes, list):
-                            continue
+        # 2. Contrainte: parent et sous-groupes ne peuvent pas avoir cours en même temps
+        if g_id in relations_groupes:
+            enfants = relations_groupes[g_id]
+            for enfant_id in enfants:
+                enfant_key = (s_idx, j, enfant_id)
+                if enfant_key in var_index:
+                    # Pour chaque séance du parent
+                    for var_p, debut_p, fin_p, s_id_p in variables:
+                        # Pour chaque séance de l'enfant
+                        for var_e, debut_e, fin_e, s_id_e in var_index[enfant_key]:
+                            # Vérifier si c'est la même séance
+                            if s_id_p != s_id_e:
+                                # Vérifier si les créneaux se chevauchent
+                                if not (fin_p < debut_e or fin_e < debut_p):
+                                    # Ajouter une seule contrainte
+                                    model.Add(var_p + var_e <= 1)
+                                    contraintes_ajoutees += 1
 
-                        for groupe in s.groupes:
-                            if not hasattr(groupe, "id_groupe"):
-                                continue
-
-                            groupe_id = groupe.id_groupe
-
-                            # Vérifier si cette séance utilise le créneau actuel
-                            for cr_debut in range(
-                                max(0, cr - duree_creneaux + 1), cr + 1
-                            ):
-                                if cr_debut < 0 or cr_debut >= nb_creneaux_30min:
-                                    continue
-
-                                for sa in salles:
-                                    key = (s.id_seance, s_idx, j, cr_debut, sa.id)
-                                    if key in seance_vars:
-                                        if groupe_id not in groupes_seances:
-                                            groupes_seances[groupe_id] = []
-
-                                        groupes_seances[groupe_id].append(
-                                            (
-                                                seance_vars[key],
-                                                cr_debut,
-                                                cr_debut + duree_creneaux - 1,
-                                                s.id_seance,  # Stocker l'ID de la séance
-                                            )
-                                        )
-                    except Exception:
-                        pass
-
-                # 1. Contrainte : un même groupe ne peut pas avoir plus d'une séance à la fois
-                for groupe_id, seances_groupe in groupes_seances.items():
-                    if len(seances_groupe) > 1:
-                        model.Add(sum(var[0] for var in seances_groupe) <= 1)
-                        total_contraintes_ajoutees += 1
-
-                # 2. Contrainte : un groupe parent et ses sous-groupes ne peuvent pas avoir cours en même temps
-                for parent_id, enfants_ids in relations_groupes.items():
-                    if parent_id in groupes_seances:
-                        seances_parent = groupes_seances[parent_id]
-
-                        for enfant_id in enfants_ids:
-                            if enfant_id in groupes_seances:
-                                seances_enfant = groupes_seances[enfant_id]
-
-                                for sp_idx, (
-                                    sp,
-                                    debut_p,
-                                    fin_p,
-                                    id_seance_p,
-                                ) in enumerate(seances_parent):
-                                    for se_idx, (
-                                        se,
-                                        debut_e,
-                                        fin_e,
-                                        id_seance_e,
-                                    ) in enumerate(seances_enfant):
-                                        # Vérifier si c'est la même séance (cas d'un CM avec parent et enfant)
-                                        if id_seance_p != id_seance_e:
-                                            # Contrainte simple : pas de chevauchement
-                                            model.Add(sp + se <= 1)
-                                            total_contraintes_ajoutees += 1
-
-                                            # Contrainte temporelle bidirectionnelle :
-                                            if fin_e >= debut_p:
-                                                model.Add(se + sp <= 1)
-                                                total_contraintes_ajoutees += 1
-                                                model.Add(sp + se <= 1)
-                                                total_contraintes_ajoutees += 1
+    print(
+        f"Contraintes d'unicité pour les groupes: {contraintes_ajoutees} contraintes ajoutées"
+    )
+    return contraintes_ajoutees
 
     return total_contraintes_ajoutees
 
