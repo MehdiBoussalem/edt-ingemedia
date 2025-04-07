@@ -84,59 +84,32 @@ def ajouter_contrainte_groupe_unicite(
     Contrainte 3: Un groupe ne peut pas suivre deux séances qui se chevauchent.
     Un groupe parent et ses sous-groupes ne peuvent pas avoir cours en même temps.
     """
-    print("\n" + "=" * 80)
-    print("DÉBOGAGE CONTRAINTE GROUPE UNICITÉ")
-    print("=" * 80)
-    print(f"Nombre de séances: {len(seances)}")
-    print(f"Nombre de groupes: {len(groupes)}")
-    print(f"Nombre de salles: {len(salles)}")
-    print(f"Semaines: {semaines}")
-    print(f"Nombre de jours: {nb_jours}")
-    print(f"Nombre de créneaux: {nb_creneaux_30min}")
-
     # Créer un dictionnaire pour stocker les relations parent-enfant
     relations_groupes = {}
 
     # Créer un dictionnaire inverse pour trouver facilement le parent d'un groupe
     relations_inverse = {}
 
-    print("\nDÉTECTION DES RELATIONS PARENT-ENFANT:")
     for g in groupes:
-        print(f"Traitement du groupe {g.id_groupe} ({g.nom})")
         if hasattr(g, "sous_groupes") and g.sous_groupes:
             sous_groupes_ids = [sg.id_groupe for sg in g.sous_groupes]
             relations_groupes[g.id_groupe] = sous_groupes_ids
-            print(
-                f"  → Groupe parent avec {len(sous_groupes_ids)} sous-groupes: {sous_groupes_ids}"
-            )
 
             for sg in g.sous_groupes:
                 relations_inverse[sg.id_groupe] = g.id_groupe
-                print(f"  → Sous-groupe {sg.id_groupe} a pour parent {g.id_groupe}")
-
-    print(f"\nRelations groupes (parent → enfants): {relations_groupes}")
-    print(f"Relations inverses (enfant → parent): {relations_inverse}")
 
     # Pour chaque créneau horaire, vérifier les conflits
     total_contraintes_ajoutees = 0
 
-    print("\nVÉRIFICATION DES CONFLITS PAR CRÉNEAU:")
     for s_idx in range(len(semaines)):
         semaine = semaines[s_idx]
-        print(f"\nSemaine {semaine} (index {s_idx}):")
 
         for j in range(nb_jours):
-            print(f"  Jour {j}:")
             # Vérifier si le jour est disponible (non férié)
             if calendrier[semaine][j] is None:
-                print(f"    → Jour férié ou non disponible, on passe")
                 continue
 
             for cr in range(nb_creneaux_30min):
-                heure_creneau = 8 + (cr // 2)
-                minute_creneau = "00" if cr % 2 == 0 else "30"
-                print(f"    Créneau {cr} ({heure_creneau}:{minute_creneau}):")
-
                 # Dictionnaire pour stocker les séances par groupe
                 groupes_seances = {}
 
@@ -146,48 +119,21 @@ def ajouter_contrainte_groupe_unicite(
 
                     # Pour chaque groupe participant à cette séance
                     try:
-                        if not hasattr(s, "groupes"):
-                            print(
-                                f"      ERREUR: La séance {s.id_seance} n'a pas d'attribut 'groupes'"
-                            )
+                        if not hasattr(s, "groupes") or not isinstance(s.groupes, list):
                             continue
-
-                        if not isinstance(s.groupes, list):
-                            print(
-                                f"      ERREUR: La séance {s.id_seance} a des groupes qui ne sont pas une liste"
-                            )
-                            continue
-
-                        print(
-                            f"      Séance {s.id_seance} - Durée: {s.duree}h ({duree_creneaux} créneaux) - {len(s.groupes)} groupes"
-                        )
 
                         for groupe in s.groupes:
                             if not hasattr(groupe, "id_groupe"):
-                                print(
-                                    f"        ERREUR: Un groupe dans la séance {s.id_seance} n'a pas d'attribut 'id_groupe'"
-                                )
-                                print(f"        Attributs disponibles: {dir(groupe)}")
                                 continue
 
                             groupe_id = groupe.id_groupe
-                            print(
-                                f"        Groupe {groupe_id} ({groupe.nom if hasattr(groupe, 'nom') else 'Sans nom'})"
-                            )
 
                             # Vérifier si cette séance utilise le créneau actuel
                             for cr_debut in range(
                                 max(0, cr - duree_creneaux + 1), cr + 1
                             ):
                                 if cr_debut < 0 or cr_debut >= nb_creneaux_30min:
-                                    print(
-                                        f"          Créneau de début {cr_debut} hors limites, on passe"
-                                    )
                                     continue
-
-                                print(
-                                    f"          Vérification créneau de début {cr_debut}"
-                                )
 
                                 for sa in salles:
                                     key = (s.id_seance, s_idx, j, cr_debut, sa.id)
@@ -203,58 +149,23 @@ def ajouter_contrainte_groupe_unicite(
                                                 s.id_seance,  # Stocker l'ID de la séance
                                             )
                                         )
-                                        print(
-                                            f"          → Séance {s.id_seance} peut utiliser la salle {sa.id} de {cr_debut} à {cr_debut + duree_creneaux - 1}"
-                                        )
-                    except Exception as e:
-                        print(
-                            f"      EXCEPTION lors du traitement de la séance {s.id_seance if hasattr(s, 'id_seance') else 'ID inconnu'}: {str(e)}"
-                        )
-
-                # Afficher les séances par groupe pour ce créneau
-                print(f"      Séances par groupe pour ce créneau:")
-                for groupe_id, seances_groupe in groupes_seances.items():
-                    print(
-                        f"        Groupe {groupe_id}: {len(seances_groupe)} séances possibles"
-                    )
-                    for idx, (var, debut, fin, id_seance) in enumerate(seances_groupe):
-                        print(
-                            f"          {idx+1}. Séance {id_seance} - Créneaux {debut}-{fin}"
-                        )
+                    except Exception:
+                        pass
 
                 # 1. Contrainte : un même groupe ne peut pas avoir plus d'une séance à la fois
-                print(
-                    "\n      CONTRAINTE 1: Un groupe ne peut pas avoir plus d'une séance à la fois"
-                )
                 for groupe_id, seances_groupe in groupes_seances.items():
                     if len(seances_groupe) > 1:
-                        print(
-                            f"        Groupe {groupe_id} a {len(seances_groupe)} séances possibles → ajout contrainte"
-                        )
                         model.Add(sum(var[0] for var in seances_groupe) <= 1)
                         total_contraintes_ajoutees += 1
-                    else:
-                        print(
-                            f"        Groupe {groupe_id} a 1 seule séance possible → pas de contrainte nécessaire"
-                        )
 
                 # 2. Contrainte : un groupe parent et ses sous-groupes ne peuvent pas avoir cours en même temps
-                print(
-                    "\n      CONTRAINTE 2: Un groupe parent et ses sous-groupes ne peuvent pas avoir cours en même temps"
-                )
                 for parent_id, enfants_ids in relations_groupes.items():
                     if parent_id in groupes_seances:
                         seances_parent = groupes_seances[parent_id]
-                        print(
-                            f"        Parent {parent_id} a {len(seances_parent)} séances possibles"
-                        )
 
                         for enfant_id in enfants_ids:
                             if enfant_id in groupes_seances:
                                 seances_enfant = groupes_seances[enfant_id]
-                                print(
-                                    f"          Enfant {enfant_id} a {len(seances_enfant)} séances possibles"
-                                )
 
                                 for sp_idx, (
                                     sp,
@@ -270,34 +181,17 @@ def ajouter_contrainte_groupe_unicite(
                                     ) in enumerate(seances_enfant):
                                         # Vérifier si c'est la même séance (cas d'un CM avec parent et enfant)
                                         if id_seance_p != id_seance_e:
-                                            print(
-                                                f"            Séances différentes: Parent {id_seance_p} vs Enfant {id_seance_e}"
-                                            )
                                             # Contrainte simple : pas de chevauchement
                                             model.Add(sp + se <= 1)
                                             total_contraintes_ajoutees += 1
 
                                             # Contrainte temporelle bidirectionnelle :
                                             if fin_e >= debut_p:
-                                                print(
-                                                    f"            Conflit temporel: Enfant finit à {fin_e}, Parent commence à {debut_p}"
-                                                )
                                                 model.Add(se + sp <= 1)
                                                 total_contraintes_ajoutees += 1
-
-                                                print(
-                                                    f"            Conflit bidirectionnel ajouté"
-                                                )
                                                 model.Add(sp + se <= 1)
                                                 total_contraintes_ajoutees += 1
-                                        else:
-                                            print(
-                                                f"            Même séance pour parent et enfant: {id_seance_p} - pas de contrainte"
-                                            )
 
-    print("\n" + "=" * 80)
-    print(f"TOTAL DES CONTRAINTES AJOUTÉES: {total_contraintes_ajoutees}")
-    print("=" * 80)
     return total_contraintes_ajoutees
 
 
