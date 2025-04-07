@@ -73,102 +73,55 @@ def ajouter_contrainte_groupe_unicite(
     model,
     seance_vars,
     seances,
-    salles,
     calendrier,
     semaines,
     nb_jours,
     nb_creneaux_30min,
     groupes,
+    salles,
 ):
-    """Version optimisée de la contrainte d'unicité pour les groupes."""
-
-    # 1. PRÉ-CALCULS (effectués une seule fois)
-    # Calculer et stocker les durées pour éviter les calculs répétés
-    durees_creneaux = {s.id_seance: int(s.duree * 60 / 30) for s in seances}
-
-    # Créer les relations groupe-séance pour éviter de parcourir toutes les séances chaque fois
-    groupes_par_seance = {}
-    for s in seances:
-        if hasattr(s, "groupes") and isinstance(s.groupes, list):
-            groupes_par_seance[s.id_seance] = [
-                g.id_groupe for g in s.groupes if hasattr(g, "id_groupe")
-            ]
-
-    # Créer les relations parent-enfant
-    relations_groupes = {}
-    for g in groupes:
-        if hasattr(g, "sous_groupes") and g.sous_groupes:
-            relations_groupes[g.id_groupe] = [sg.id_groupe for sg in g.sous_groupes]
-
-    # Index inverse: séances par groupe
-    seances_par_groupe = {}
-    for s_id, grp_ids in groupes_par_seance.items():
-        for g_id in grp_ids:
-            if g_id not in seances_par_groupe:
-                seances_par_groupe[g_id] = []
-            seances_par_groupe[g_id].append(s_id)
-
-    # 2. TRAITEMENT OPTIMISÉ
+    """Version optimisée avec moins de contraintes en mémoire."""
     contraintes_ajoutees = 0
 
-    # Créer un index des variables de séance par semaine, jour, groupe
-    # Cela permet d'éviter de parcourir toutes les séances à chaque itération
-    var_index = {}
+    # Regrouper les variables par créneau horaire pour chaque groupe
+    for s_idx in range(len(semaines)):
+        for j in range(nb_jours):
+            if calendrier[semaines[s_idx]][j] is None:
+                continue
 
-    # Construire cet index
-    for (s_id, s_idx, j, cr_debut, sa_id), var in seance_vars.items():
-        if s_id in groupes_par_seance:
-            duree = durees_creneaux[s_id]
-            for g_id in groupes_par_seance[s_id]:
-                key = (s_idx, j, g_id)
-                if key not in var_index:
-                    var_index[key] = []
-                # Stocker la variable avec ses créneaux d'occupation
-                var_index[key].append((var, cr_debut, cr_debut + duree - 1, s_id))
+            # Créer un dictionnaire indexé par (groupe_id, créneau)
+            groupe_creneau_vars = {}
 
-    # Ajouter les contraintes pour chaque semaine/jour/groupe
-    for (s_idx, j, g_id), variables in var_index.items():
-        # Vérifier si le jour est disponible
-        if calendrier[semaines[s_idx]][j] is None:
-            continue
+            # Remplir le dictionnaire
+            for (s_id, si, jour, cr_debut, sa_id), var in seance_vars.items():
+                if si == s_idx and jour == j:
+                    s = next(
+                        (seance for seance in seances if seance.id_seance == s_id), None
+                    )
+                    if s:
+                        duree_creneaux = int(s.duree * 60 / 30)
+                        groupes_seance = (
+                            s.groupes if isinstance(s.groupes, list) else [s.groupes]
+                        )
 
-        # 1. Contrainte: un groupe ne peut pas avoir plus d'une séance à un moment donné
-        if len(variables) > 1:
-            # Pour chaque créneau, vérifier les chevauchements
-            for cr in range(nb_creneaux_30min):
-                seances_au_creneau = []
-                for var, debut, fin, s_id in variables:
-                    if debut <= cr <= fin:
-                        seances_au_creneau.append(var)
+                        for g in groupes_seance:
+                            # Pour chaque créneau occupé par la séance
+                            for cr in range(cr_debut, cr_debut + duree_creneaux):
+                                key = (g.id_groupe, cr)
+                                if key not in groupe_creneau_vars:
+                                    groupe_creneau_vars[key] = []
+                                groupe_creneau_vars[key].append(var)
 
-                if len(seances_au_creneau) > 1:
-                    model.Add(sum(seances_au_creneau) <= 1)
+            # Ajouter une contrainte pour chaque groupe/créneau avec plusieurs variables
+            for (g_id, cr), vars_list in groupe_creneau_vars.items():
+                if len(vars_list) > 1:
+                    model.Add(sum(vars_list) <= 1)
                     contraintes_ajoutees += 1
 
-        # 2. Contrainte: parent et sous-groupes ne peuvent pas avoir cours en même temps
-        if g_id in relations_groupes:
-            enfants = relations_groupes[g_id]
-            for enfant_id in enfants:
-                enfant_key = (s_idx, j, enfant_id)
-                if enfant_key in var_index:
-                    # Pour chaque séance du parent
-                    for var_p, debut_p, fin_p, s_id_p in variables:
-                        # Pour chaque séance de l'enfant
-                        for var_e, debut_e, fin_e, s_id_e in var_index[enfant_key]:
-                            # Vérifier si c'est la même séance
-                            if s_id_p != s_id_e:
-                                # Vérifier si les créneaux se chevauchent
-                                if not (fin_p < debut_e or fin_e < debut_p):
-                                    # Ajouter une seule contrainte
-                                    model.Add(var_p + var_e <= 1)
-                                    contraintes_ajoutees += 1
-
     print(
-        f"Contraintes d'unicité pour les groupes: {contraintes_ajoutees} contraintes ajoutées"
+        f"Contraintes d'unicité optimisées pour les groupes: {contraintes_ajoutees} contraintes ajoutées"
     )
     return contraintes_ajoutees
-
-    return total_contraintes_ajoutees
 
 
 def ajouter_contrainte_salle_unicite(
@@ -479,12 +432,12 @@ def ajouter_toutes_contraintes(
         model,
         seance_vars,
         seances,
-        salles,
-        calendrier,
+        calendrier,  # Modifier l'ordre ici
         semaines,
         nb_jours,
         nb_creneaux_30min,
         groupes,
+        salles,  # Mettre salles en dernier
     )
 
     # 4. Une salle ne peut pas accueillir deux séances qui se chevauchent

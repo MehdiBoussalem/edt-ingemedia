@@ -12,6 +12,27 @@ import pytz
 from datetime import datetime
 from model import Salle, Enseignant, Groupe, Cours, Seance
 import multiprocessing
+import traceback
+
+
+# Ajout de la classe de callback pour suivre les solutions
+class SolutionCallback(cp_model.CpSolverSolutionCallback):
+    """Callback pour suivre les solutions trouvées pendant la résolution."""
+
+    def __init__(self):
+        cp_model.CpSolverSolutionCallback.__init__(self)
+        self._solution_count = 0
+        self._start_time = datetime.now()
+
+    def on_solution_callback(self):
+        """Appelé à chaque solution trouvée."""
+        current_time = datetime.now()
+        elapsed = current_time - self._start_time
+        self._solution_count += 1
+        print(f"Solution #{self._solution_count} trouvée après {elapsed}")
+
+    def solution_count(self):
+        return self._solution_count
 
 
 def charger_salles(fichier="data/salle.csv"):
@@ -628,28 +649,53 @@ class EmploiDuTemps:
             pause_fin=self.PAUSE_DEJEUNER_FIN,
         )
 
-        # Résolution
-        solver = cp_model.CpSolver()
-        # Configuration des paramètres du solveur
-        solver.parameters.num_search_workers = 8  # Utiliser 8 threads en parallèle
-        solver.parameters.log_search_progress = (
-            True  # Afficher la progression de la recherche
-        )
-        solver.parameters.max_time_in_seconds = 7200  # Timeout de 2 heures (optionnel)
-        print("\n" + "=" * 80)
-        print("DÉMARRAGE DE LA RÉSOLUTION AVEC 8 THREADS PARALLÈLES")
-        print("=" * 80)
+        # Résolution avec modifications pour améliorer le suivi
+        # Réduire le nombre de threads si nécessaire
+        cores = multiprocessing.cpu_count()
+        threads = min(
+            16, cores - 1
+        )  # Utiliser moins de threads pour éviter de surcharger le système
 
-        # Lancer la résolution
-        start_time = datetime.now()
-        print(f"Heure de début: {start_time.strftime('%H:%M:%S')}")
-        print(f"Nombre de cœurs disponibles: {multiprocessing.cpu_count()}")
-        status = solver.Solve(model)
-        end_time = datetime.now()
-        duration = end_time - start_time
-        print(f"Heure de fin: {end_time.strftime('%H:%M:%S')}")
-        print(f"Durée totale de résolution: {duration}")
+        # Configuration du solveur
+        solver = cp_model.CpSolver()
+        solver.parameters.num_search_workers = threads
+        solver.parameters.log_search_progress = True
+        solver.parameters.max_time_in_seconds = 7200  # Timeout de 2 heures
+
+        print("\n" + "=" * 80)
+        print(f"DÉMARRAGE DE LA RÉSOLUTION AVEC {threads} THREADS PARALLÈLES")
         print("=" * 80)
+        print(f"Heure de début: {datetime.now().strftime('%H:%M:%S')}")
+        print(f"Nombre de cœurs disponibles: {cores}")
+
+        try:
+            print("Lancement de la résolution...")
+            callback = SolutionCallback()
+            start_time = datetime.now()
+            status = solver.SolveWithSolutionCallback(model, callback)
+            end_time = datetime.now()
+            duration = end_time - start_time
+
+            print(
+                f"Résolution terminée! {callback.solution_count()} solutions trouvées."
+            )
+            print(f"Heure de fin: {end_time.strftime('%H:%M:%S')}")
+            print(f"Durée totale de résolution: {duration}")
+            print("=" * 80)
+
+        except KeyboardInterrupt:
+            print("\n⚠️ Résolution interrompue manuellement par l'utilisateur")
+            return None
+        except MemoryError:
+            print("\n❌ ERREUR: Mémoire insuffisante pour résoudre le problème")
+            print(
+                "Essayez de réduire le nombre de séances ou d'assouplir les contraintes"
+            )
+            return None
+        except Exception as e:
+            print(f"\n❌ ERREUR lors de la résolution: {str(e)}")
+            traceback.print_exc()
+            return None
 
         # Afficher les statistiques du solveur
         print(f"Nombre de branches explorées: {solver.NumBranches()}")
@@ -1060,3 +1106,4 @@ if __name__ == "__main__":
         print(f"Erreur: Fichier non trouvé - {e}")
     except Exception as e:
         print(f"Erreur: {e}")
+        traceback.print_exc()
