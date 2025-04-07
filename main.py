@@ -11,6 +11,7 @@ from icalendar import Calendar, Event
 import pytz
 from datetime import datetime
 from model import Salle, Enseignant, Groupe, Cours, Seance
+import multiprocessing
 
 
 def charger_salles(fichier="data/salle.csv"):
@@ -639,7 +640,31 @@ class EmploiDuTemps:
 
         # Résolution
         solver = cp_model.CpSolver()
+        # Configuration des paramètres du solveur
+        solver.parameters.num_search_workers = 8  # Utiliser 8 threads en parallèle
+        solver.parameters.log_search_progress = (
+            True  # Afficher la progression de la recherche
+        )
+        solver.parameters.max_time_in_seconds = 7200  # Timeout de 2 heures (optionnel)
+        print("\n" + "=" * 80)
+        print("DÉMARRAGE DE LA RÉSOLUTION AVEC 8 THREADS PARALLÈLES")
+        print("=" * 80)
+
+        # Lancer la résolution
+        start_time = datetime.now()
+        print(f"Heure de début: {start_time.strftime('%H:%M:%S')}")
+        print(f"Nombre de cœurs disponibles: {multiprocessing.cpu_count()}")
         status = solver.Solve(model)
+        end_time = datetime.now()
+        duration = end_time - start_time
+        print(f"Heure de fin: {end_time.strftime('%H:%M:%S')}")
+        print(f"Durée totale de résolution: {duration}")
+        print("=" * 80)
+
+        # Afficher les statistiques du solveur
+        print(f"Nombre de branches explorées: {solver.NumBranches()}")
+        print(f"Nombre de conflits: {solver.NumConflicts()}")
+        print(f"Nombre de solutions trouvées: {solver.ResponseStats()}")
         if status == cp_model.OPTIMAL:
             print(
                 "✅ Solution OPTIMALE trouvée ! Toutes les contraintes sont satisfaites."
