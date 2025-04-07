@@ -1,0 +1,13 @@
+id_groupe,nom,effectif,parent_id
+DASI,Master_DASI,22,
+ACNCC,Master_ACNCC,19,
+CDE,Master_CDE,,
+DEDI,Master_DEDI,,
+CINPM,Master_CINPM,,
+CINPM,Master_CINPM,,
+CDE_1,Master_CDE_A,17,CDE
+CDE_2,Master_CDE_B,17,CDE
+CINPM_1,Master_CINPM_A,14,CINPM
+CINPM_2,Master_CINPM_B,14,CINPM
+DEDI_1,Master_DEDI_A,21,DEDI
+DEDI_2,Master_DEDI_B,22,DEDI

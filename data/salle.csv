@@ -1,0 +1,13 @@
+id,nom,effectif_max,type_salle
+1,CO315,40,standard
+2,CO416,26,MAC
+3,CO503,25,VIEUX ORDI
+4,CO510,20,PC
+5,CO515,20,MUSIQUE
+6,CO601,30,standard
+7,CO604,30,standard
+8,CO610,20,PC 3D
+9,CO615,20,PC
+10,CO701,60,standard
+11,AMPHI110,150,amphi
+12,FA001,300,amphi

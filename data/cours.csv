@@ -1,0 +1,17 @@
+id_cours,nom,enseignant,groupes,duree_total,max_duration,type_cours
+1,Industries culturelles et créatives numériques Gagnebien,1,"DASI,ACNCC,CDE,DEDI,CINPM",11.5,2.5,CM
+2,Industries culturelles et créatives numériques Zenouda,2,"DASI,ACNCC,CDE,DEDI,CINPM",6,3,CM
+3,Théories et pratiques scientifiques en SIC,3,"DASI,ACNCC,CDE,DEDI,CINPM",17.5,2.5,CM
+4,Humanités et environnements numériques,4,"DASI,ACNCC,CDE,DEDI,CINPM",17.5,2.5,CM
+5,Management de projets numériques,5,"DASI,CINPM,CDE",10,2.5,CM
+6,Management de projets numériques,5,"DASI,CINPM,CDE",6,3,TD
+7,Stratégies de communication,7,"DASI,CINPM,CDE",10,2.5,CM
+8,Stratégies de communication,7,"DASI,CINPM,CDE",9,3,TD
+9,Littératie et visualisation des données (IA),8,"DASI,CINPM,CDE",10,2.5,CM
+10,Littératie et visualisation des données (IA),8,"DASI,CINPM,CDE",6,3,TD
+11,Communication environnementale,1,"DASI,CINPM,CDE",10,2.5,CM
+12,Médias et numériques,9,"DASI,CINPM,CDE",10,2.5,CM
+13,Environnement juridique,10,"DASI,CINPM,CDE",10,2.5,CM
+14,Anglais,11,"CDE",18,3,TD
+
+
