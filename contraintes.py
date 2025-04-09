@@ -439,6 +439,226 @@ def ajouter_contrainte_capacite_salle(
     return contraintes_ajoutees
 
 
+def ajouter_contrainte_type_salle_td(
+    model,
+    seance_vars,
+    seances,
+    salles,
+    calendrier,
+    semaines,
+    nb_jours,
+    nb_creneaux_30min,
+):
+    """
+    Contrainte: Pour les cours en TD, si l'enseignant a un besoin spécifique de salle,
+    seules les salles correspondantes peuvent être utilisées.
+    """
+    contraintes_ajoutees = 0
+
+    for s in seances:
+        # Appliquer la contrainte uniquement aux séances de type TD
+        if s.type_seance == "TD":
+            enseignant = s.cours.enseignant
+            # Vérifier si l'enseignant a un besoin spécifique de salle
+            if enseignant.besoin_salle != "standard":
+                for sa in salles:
+                    # Si la salle ne correspond pas au besoin de l'enseignant
+                    if sa.type_salle != enseignant.besoin_salle:
+                        for s_idx in range(len(semaines)):
+                            for j in range(nb_jours):
+                                for cr_debut in range(nb_creneaux_30min):
+                                    if (
+                                        s.id_seance,
+                                        s_idx,
+                                        j,
+                                        cr_debut,
+                                        sa.id,
+                                    ) in seance_vars:
+                                        model.Add(
+                                            seance_vars[
+                                                (s.id_seance, s_idx, j, cr_debut, sa.id)
+                                            ]
+                                            == 0
+                                        )
+                                        contraintes_ajoutees += 1
+
+    print(
+        f"Contraintes de type de salle pour TD: {contraintes_ajoutees} contraintes ajoutées"
+    )
+    return contraintes_ajoutees
+
+
+def ajouter_contrainte_disponibilite_salle(
+    model,
+    seance_vars,
+    seances,
+    salles,
+    calendrier,
+    semaines,
+    nb_jours,
+    nb_creneaux_30min,
+):
+    """
+    Contrainte: Vérifie si une salle est disponible en fonction de la période (matin/après-midi)
+    et empêche l'affectation si la séance dépasse la disponibilité de la salle.
+    """
+    contraintes_ajoutees = 0
+
+    for s in seances:
+        duree_creneaux = int(s.duree * 60 / 30)  # Durée de la séance en créneaux
+
+        for sa in salles:
+            for s_idx in range(len(semaines)):
+                for j in range(nb_jours):
+                    # Vérifier si le jour est disponible (non férié)
+                    if calendrier[semaines[s_idx]][j] is None:
+                        continue
+
+                    for cr_debut in range(nb_creneaux_30min - duree_creneaux + 1):
+                        # Déterminer si le créneau de début est le matin ou l'après-midi
+                        if cr_debut < 10:  # 10 correspond à 13h (8h + 5h)
+                            periode = "matin"
+                        else:
+                            periode = "apres_midi"
+
+                        # Vérifier si la salle est disponible pendant cette période
+                        JOURS_SEMAINE = [
+                            "lundi",
+                            "mardi",
+                            "mercredi",
+                            "jeudi",
+                            "vendredi",
+                            "samedi",
+                            "dimanche",
+                        ]
+                        if not sa.est_disponible(
+                            JOURS_SEMAINE[j], periode
+                        ):  # JOURS_SEMAINE doit être défini
+                            if (
+                                s.id_seance,
+                                s_idx,
+                                j,
+                                cr_debut,
+                                sa.id,
+                            ) in seance_vars:
+                                model.Add(
+                                    seance_vars[
+                                        (s.id_seance, s_idx, j, cr_debut, sa.id)
+                                    ]
+                                    == 0
+                                )
+                                contraintes_ajoutees += 1
+                                continue  # Passer à la prochaine itération
+
+                        # Vérifier si la séance dépasse la période de disponibilité
+                        heure_fin_creneau = cr_debut + duree_creneaux
+                        if (
+                            periode == "matin" and heure_fin_creneau > 10
+                        ):  # Si la salle est dispo que le matin
+                            if (
+                                s.id_seance,
+                                s_idx,
+                                j,
+                                cr_debut,
+                                sa.id,
+                            ) in seance_vars:
+                                model.Add(
+                                    seance_vars[
+                                        (s.id_seance, s_idx, j, cr_debut, sa.id)
+                                    ]
+                                    == 0
+                                )
+                                contraintes_ajoutees += 1
+
+    print(
+        f"Contraintes de disponibilité des salles: {contraintes_ajoutees} contraintes ajoutées"
+    )
+    return contraintes_ajoutees
+
+
+def ajouter_contrainte_ordre_seances(
+    model, seance_vars, seances, salles, nb_semaines, nb_jours, nb_creneaux_30min
+):
+    """
+    Contrainte: Assure que les séances d'un même cours sont placées dans l'ordre chronologique.
+    """
+    contraintes_ajoutees = 0
+
+    # Regrouper les séances par cours
+    cours_seances = {}
+    for s in seances:
+        if s.cours.id_cours not in cours_seances:
+            cours_seances[s.cours.id_cours] = []
+        cours_seances[s.cours.id_cours].append(s)
+
+    # Pour chaque cours, ajouter des contraintes pour ordonner les séances
+    for id_cours, seances_cours in cours_seances.items():
+        # Extraire l'ordre numérique des séances à partir de l'id_seance
+        def get_seance_order(seance):
+            # Extraire le numéro de séance à partir de l'id_seance
+            parts = seance.id_seance.split("_")
+            if len(parts) >= 3 and parts[-1].isdigit():
+                return int(parts[-1])
+            return 0  # Par défaut si le format ne correspond pas
+
+        # Trier les séances par numéro de séance
+        seances_cours.sort(key=get_seance_order)
+
+        # Créer des variables pour représenter la date et l'heure de chaque séance
+        seance_time_vars = {}
+
+        # Pour chaque séance, créer une variable qui représente son "temps absolu"
+        for seance in seances_cours:
+            seance_time_vars[seance.id_seance] = model.NewIntVar(
+                0,
+                nb_semaines * nb_jours * nb_creneaux_30min - 1,
+                f"time_seance_{seance.id_seance}",
+            )
+
+            # Lier cette variable aux variables de décision de placement
+            for s_idx in range(nb_semaines):
+                for j in range(nb_jours):
+                    for cr_debut in range(nb_creneaux_30min):
+                        for sa in salles:
+                            if (
+                                seance.id_seance,
+                                s_idx,
+                                j,
+                                cr_debut,
+                                sa.id,
+                            ) in seance_vars:
+                                # Calcul du temps absolu (semaine, jour, créneau)
+                                temps_absolu = (
+                                    s_idx * nb_jours * nb_creneaux_30min
+                                    + j * nb_creneaux_30min
+                                    + cr_debut
+                                )
+                                model.Add(
+                                    seance_time_vars[seance.id_seance] == temps_absolu
+                                ).OnlyEnforceIf(
+                                    seance_vars[
+                                        (seance.id_seance, s_idx, j, cr_debut, sa.id)
+                                    ]
+                                )
+
+        # Ajouter des contraintes pour l'ordre des séances
+        for i in range(len(seances_cours) - 1):
+            seance1 = seances_cours[i]
+            seance2 = seances_cours[i + 1]
+
+            # La séance2 doit avoir lieu après la séance1
+            model.Add(
+                seance_time_vars[seance2.id_seance]
+                > seance_time_vars[seance1.id_seance]
+            )
+            contraintes_ajoutees += 1
+
+    print(
+        f"Contraintes d'ordre des séances: {contraintes_ajoutees} contraintes ajoutées"
+    )
+    return contraintes_ajoutees
+
+
 def ajouter_toutes_contraintes(
     model,
     seance_vars,
@@ -559,4 +779,41 @@ def ajouter_toutes_contraintes(
         nb_jours,
         nb_creneaux_30min,
     )
+    # 8. Contrainte de type de salle pour TD
+    print("Ajout de la contrainte de type de salle pour TD...")
+    ajouter_contrainte_type_salle_td(
+        model,
+        seance_vars,
+        seances,
+        salles,
+        calendrier,
+        semaines,
+        nb_jours,
+        nb_creneaux_30min,
+    )
+    # 9. Contrainte de disponibilité des salles
+    print("Ajout de la contrainte de disponibilité des salles...")
+    ajouter_contrainte_disponibilite_salle(
+        model,
+        seance_vars,
+        seances,
+        salles,
+        calendrier,
+        semaines,
+        nb_jours,
+        nb_creneaux_30min,
+    )
+
+    # 10. Contrainte d'ordre des séances
+    print("Ajout de la contrainte d'ordre des séances...")
+    ajouter_contrainte_ordre_seances(
+        model,
+        seance_vars,
+        seances,
+        salles,
+        len(semaines),
+        nb_jours,
+        nb_creneaux_30min,
+    )
+
     print("Toutes les contraintes ont été ajoutées au modèle.")

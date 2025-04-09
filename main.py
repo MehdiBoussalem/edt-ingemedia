@@ -44,12 +44,36 @@ def charger_salles(fichier="data/salle.csv"):
             if (
                 row["id"].strip() and "id" not in row["id"]
             ):  # Ignorer les lignes de commentaire
+                # Charger les disponibilités depuis le CSV
+                disponibilite = {
+                    "lundi": {
+                        "matin": int(row["Lundi_Matin"]),
+                        "apres_midi": int(row["Lundi_ApresMidi"]),
+                    },
+                    "mardi": {
+                        "matin": int(row["Mardi_Matin"]),
+                        "apres_midi": int(row["Mardi_ApresMidi"]),
+                    },
+                    "mercredi": {
+                        "matin": int(row["Mercredi_Matin"]),
+                        "apres_midi": int(row["Mercredi_ApresMidi"]),
+                    },
+                    "jeudi": {
+                        "matin": int(row["Jeudi_Matin"]),
+                        "apres_midi": int(row["Jeudi_ApresMidi"]),
+                    },
+                    "vendredi": {
+                        "matin": int(row["Vendredi_Matin"]),
+                        "apres_midi": int(row["Vendredi_ApresMidi"]),
+                    },
+                }
                 salles.append(
                     model.Salle(
                         id=int(row["id"]),
                         nom=row["nom"],
                         effectif_max=int(row["effectif_max"]),
                         type_salle=row["type_salle"],
+                        disponibilite=disponibilite,
                     )
                 )
     return salles
@@ -1082,7 +1106,12 @@ if __name__ == "__main__":
         scheduler = EmploiDuTemps(
             annee=2025,
             mois=9,
-            semaines=[37, 38, 39, 40],  # Semaines de septembre 2025
+            semaines=[
+                37,
+                38,
+                39,
+                40,
+            ],  # Semaines de septembre 2025
             jours_feries=jours_feries,
             date_debut="2025-09-09",  # Commencer le 12 septembre
         )

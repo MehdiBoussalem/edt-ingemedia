@@ -1,7 +1,9 @@
 class Salle:
     """Représente une salle de classe avec ses caractéristiques."""
 
-    def __init__(self, id, nom, effectif_max, type_salle="standard"):
+    def __init__(
+        self, id, nom, effectif_max, type_salle="standard", disponibilite=None
+    ):
         """
         Initialise une salle de classe.
 
@@ -10,14 +12,46 @@ class Salle:
             nom: Nom de la salle (ex: "B202")
             effectif_max: Nombre maximum d'étudiants
             type_salle: Type de salle (standard, amphi, labo, etc.)
+            disponibilite: Dictionnaire représentant la disponibilité de la salle.
+                           Ex: {
+                               "lundi": {"matin": True, "apres_midi": False},
+                               "mardi": {"matin": False, "apres_midi": True},
+                               ...
+                           }
+                           Si None, la salle est considérée comme toujours disponible.
         """
         self.id = id
         self.nom = nom
         self.effectif_max = effectif_max
         self.type_salle = type_salle
+        self.disponibilite = disponibilite
+
+    def est_disponible(self, jour, periode):
+        """
+        Vérifie si la salle est disponible à un jour et période donnés.
+
+        Args:
+            jour: Jour de la semaine (ex: "lundi")
+            periode: Période de la journée ("matin" ou "apres_midi")
+
+        Returns:
+            True si la salle est disponible, False sinon.
+        """
+        if self.disponibilite is None:
+            return True  # Salle toujours disponible
+
+        if jour not in self.disponibilite:
+            return False  # Jour non défini, donc non disponible
+
+        if periode not in self.disponibilite[jour]:
+            return False  # Période non définie pour ce jour
+
+        return self.disponibilite[jour][periode]
 
     def __str__(self):
-        return f"Salle {self.nom} (capacité: {self.capacite}, type: {self.type_salle})"
+        return (
+            f"Salle {self.nom} (capacité: {self.effectif_max}, type: {self.type_salle})"
+        )
 
 
 class Enseignant:
