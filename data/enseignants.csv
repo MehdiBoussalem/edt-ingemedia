@@ -1,19 +1,19 @@
-id,nom
-1,Anne Gagnebien
-2,Hervé Zénouda
-3,Michel Durampart
-4,Franck Renucci
-5,Philippe Bonfils
-6,Lucia Granget
-7,Véronique Ruiz
-8,Sami Ben Amor
-9,Billel Aroufoune
-10,Sophie Monteil
-11,Julien Chevron
-12,Nathalie Trezza
-13,David Galli
-14,Asma Djebbi
-15,Alaric Tabaries
-16,Emilie Mitran
-17,Gaelle Picut
-18,Eric Marmottans
+id,nom,besoin_salle
+1,Anne Gagnebien,standard
+2,Hervé Zénouda,musique
+3,Michel Durampart,standard
+4,Franck Renucci,standard
+5,Philippe Bonfils,standard
+6,Lucia Granget,standard
+7,Véronique Ruiz,mac
+8,Sami Ben Amor,pc
+9,Billel Aroufoune,standard
+10,Sophie Monteil,standard
+11,Julien Chevron,standard
+12,Nathalie Trezza,pc_3d
+13,David Galli,standard
+14,Asma Djebbi,mac
+15,Alaric Tabaries,pc
+16,Emilie Mitran,standard
+17,Gaelle Picut,vieux_ordi
+18,Eric Marmottans,standard

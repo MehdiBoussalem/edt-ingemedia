@@ -23,16 +23,18 @@ class Salle:
 class Enseignant:
     """Représente un enseignant."""
 
-    def __init__(self, id, nom, specialite):
+    def __init__(self, id, nom, besoin_salle):
         """
         Initialise un enseignant.
 
         Args:
             id: Identifiant unique de l'enseignant
             nom: Nom de l'enseignant
+            besoin_salle: Type de salle dont l'enseignant a besoin (standard, amphi, labo, etc.)
         """
         self.id = id
         self.nom = nom
+        self.besoin_salle = besoin_salle
 
     def __str__(self):
         return f"Enseignant {self.nom} (spécialité: {self.specialite})"

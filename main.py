@@ -68,7 +68,7 @@ def charger_enseignants(fichier="data/enseignants.csv"):
                     model.Enseignant(
                         id=int(row["id"]),
                         nom=row["nom"],
-                        specialite="",  # Spécialité non présente dans le CSV
+                        besoin_salle=row["besoin_salle"],
                     )
                 )
     return enseignants

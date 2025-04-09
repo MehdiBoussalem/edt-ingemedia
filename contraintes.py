@@ -80,8 +80,19 @@ def ajouter_contrainte_groupe_unicite(
     groupes,
     salles,
 ):
-    """Version optimisée avec moins de contraintes en mémoire."""
+    """
+    Version optimisée avec moins de contraintes en mémoire,
+    tenant compte des relations parent-enfant entre les groupes.
+    """
     contraintes_ajoutees = 0
+
+    # Créer un dictionnaire pour retrouver rapidement les sous-groupes d'un groupe
+    sous_groupes_par_parent = {}
+    for groupe in groupes:
+        if hasattr(groupe, "sous_groupes") and groupe.sous_groupes:
+            sous_groupes_par_parent[groupe.id_groupe] = [
+                sg.id_groupe for sg in groupe.sous_groupes
+            ]
 
     # Regrouper les variables par créneau horaire pour chaque groupe
     for s_idx in range(len(semaines)):
@@ -107,10 +118,21 @@ def ajouter_contrainte_groupe_unicite(
                         for g in groupes_seance:
                             # Pour chaque créneau occupé par la séance
                             for cr in range(cr_debut, cr_debut + duree_creneaux):
+                                # Ajouter une contrainte pour le groupe lui-même
                                 key = (g.id_groupe, cr)
                                 if key not in groupe_creneau_vars:
                                     groupe_creneau_vars[key] = []
                                 groupe_creneau_vars[key].append(var)
+
+                                # Si le groupe a des sous-groupes, ajouter aussi la contrainte pour eux
+                                if g.id_groupe in sous_groupes_par_parent:
+                                    for sous_groupe_id in sous_groupes_par_parent[
+                                        g.id_groupe
+                                    ]:
+                                        key_sous_groupe = (sous_groupe_id, cr)
+                                        if key_sous_groupe not in groupe_creneau_vars:
+                                            groupe_creneau_vars[key_sous_groupe] = []
+                                        groupe_creneau_vars[key_sous_groupe].append(var)
 
             # Ajouter une contrainte pour chaque groupe/créneau avec plusieurs variables
             for (g_id, cr), vars_list in groupe_creneau_vars.items():
@@ -374,6 +396,49 @@ def ajouter_contrainte_pause_dejeuner_groupe(
                 model.Add(pause_valide == 1)
 
 
+def ajouter_contrainte_capacite_salle(
+    model,
+    seance_vars,
+    seances,
+    salles,
+    calendrier,
+    semaines,
+    nb_jours,
+    nb_creneaux_30min,
+):
+    """
+    Contrainte: La capacité de la salle doit être suffisante pour accueillir tous les groupes participant à la séance.
+    """
+    contraintes_ajoutees = 0
+
+    for s in seances:
+        # Calculer l'effectif total des groupes participant à la séance
+        effectif_total = 0
+        for groupe in s.groupes:
+            effectif_total += groupe.effectif
+
+        for sa in salles:
+            # Si la capacité de la salle est inférieure à l'effectif total,
+            # on empêche l'affectation de cette séance à cette salle
+            if sa.effectif_max < effectif_total:
+                for s_idx in range(len(semaines)):
+                    for j in range(nb_jours):
+                        for cr_debut in range(nb_creneaux_30min):
+                            if (s.id_seance, s_idx, j, cr_debut, sa.id) in seance_vars:
+                                model.Add(
+                                    seance_vars[
+                                        (s.id_seance, s_idx, j, cr_debut, sa.id)
+                                    ]
+                                    == 0
+                                )
+                                contraintes_ajoutees += 1
+
+    print(
+        f"Contraintes de capacité des salles: {contraintes_ajoutees} contraintes ajoutées"
+    )
+    return contraintes_ajoutees
+
+
 def ajouter_toutes_contraintes(
     model,
     seance_vars,
@@ -482,5 +547,16 @@ def ajouter_toutes_contraintes(
         pause_debut,
         pause_fin,
     )
-
+    # 7. Contrainte de capacité des salles
+    print("Ajout de la contrainte de capacité des salles...")
+    ajouter_contrainte_capacite_salle(
+        model,
+        seance_vars,
+        seances,
+        salles,
+        calendrier,
+        semaines,
+        nb_jours,
+        nb_creneaux_30min,
+    )
     print("Toutes les contraintes ont été ajoutées au modèle.")
