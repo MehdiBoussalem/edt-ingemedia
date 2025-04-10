@@ -95,7 +95,28 @@ def charger_enseignants(fichier="data/enseignants.csv"):
                 semaine_impaire = (
                     int(row["semaine_impaire"]) if "semaine_impaire" in row else 1
                 )
-                disponibilite = {}
+                disponibilite = {
+                    "lundi": {
+                        "matin": bool(int(row["lundi_matin"])),
+                        "apres_midi": bool(int(row["lundi_apres_midi"])),
+                    },
+                    "mardi": {
+                        "matin": bool(int(row["mardi_matin"])),
+                        "apres_midi": bool(int(row["mardi_apres_midi"])),
+                    },
+                    "mercredi": {
+                        "matin": bool(int(row["mercredi_matin"])),
+                        "apres_midi": bool(int(row["mercredi_apres_midi"])),
+                    },
+                    "jeudi": {
+                        "matin": bool(int(row["jeudi_matin"])),
+                        "apres_midi": bool(int(row["jeudi_apres_midi"])),
+                    },
+                    "vendredi": {
+                        "matin": bool(int(row["vendredi_matin"])),
+                        "apres_midi": bool(int(row["vendredi_apres_midi"])),
+                    },
+                }
                 enseignants.append(
                     model.Enseignant(
                         id=int(row["id"]),
