@@ -13,6 +13,37 @@ from datetime import datetime
 from model import Salle, Enseignant, Groupe, Cours, Seance
 import multiprocessing
 import traceback
+import logging
+import sys
+
+
+# Configuration de la journalisation
+logging.basicConfig(
+    level=logging.DEBUG,  # Niveau de journalisation (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format="%(asctime)s - %(levelname)s - %(message)s",  # Format des messages
+    filename="edt_ingemedia.log",  # Nom du fichier log
+    filemode="w",  # Mode d'ouverture du fichier ('w' pour écraser, 'a' pour ajouter)
+)
+
+
+# Redirection de stdout et stderr vers le fichier log
+class Logger(object):
+    def __init__(self):
+        self.terminal = sys.stdout
+        self.log = open("edt_ingemedia.log", "w")
+
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+
+    def flush(self):
+        # Cette méthode est nécessaire pour que la redirection fonctionne correctement.
+        self.terminal.flush()
+        self.log.flush()
+
+
+sys.stdout = Logger()
+sys.stderr = Logger()
 
 
 # Ajout de la classe de callback pour suivre les solutions
