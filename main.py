@@ -117,15 +117,20 @@ def charger_enseignants(fichier="data/enseignants.csv"):
                         "apres_midi": bool(int(row["vendredi_apres_midi"])),
                     },
                 }
-                enseignants.append(
-                    model.Enseignant(
-                        id=int(row["id"]),
-                        nom=row["nom"],
-                        besoin_salle=row["besoin_salle"],
-                        semaine_paire=semaine_paire,
-                        semaine_impaire=semaine_impaire,
-                        disponibilite=disponibilite,
-                    )
+                enseignant = model.Enseignant(
+                    id=int(row["id"]),
+                    nom=row["nom"],
+                    besoin_salle=row["besoin_salle"],
+                    semaine_paire=semaine_paire,
+                    semaine_impaire=semaine_impaire,
+                    disponibilite=disponibilite,
+                )
+                enseignants.append(enseignant)
+                print(
+                    enseignant.nom,
+                    enseignant.semaine_paire,
+                    enseignant.semaine_impaire,
+                    enseignant.disponibilite,
                 )
     return enseignants
 

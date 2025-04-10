@@ -37,10 +37,11 @@ def ajouter_contrainte_enseignant_unicite(
         )
         for s_idx, semaine in enumerate(semaines):
             # Vérifier si l'enseignant est disponible cette semaine
-            if semaine % 2 == 0 and not e.semaine_paire:
+            est_semaine_paire = semaine % 2 == 0
+            if est_semaine_paire and not e.semaine_paire:
                 print(f"Semaine {semaine} paire, enseignant {e.nom} indisponible")
                 continue  # Passer à la semaine suivante si l'enseignant n'est pas disponible les semaines paires
-            if semaine % 2 != 0 and not e.semaine_impaire:
+            if not est_semaine_paire and not e.semaine_impaire:
                 print(f"Semaine {semaine} impaire, enseignant {e.nom} indisponible")
                 continue  # Passer à la semaine suivante si l'enseignant n'est pas disponible les semaines impaires
 

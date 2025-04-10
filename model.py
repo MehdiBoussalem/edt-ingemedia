@@ -101,16 +101,26 @@ class Enseignant:
         Returns:
             True si l'enseignant est disponible, False sinon.
         """
+        print(
+            f"Vérification disponibilité de {self.nom} pour jour={jour}, periode={periode}"
+        )
         if self.disponibilite is None:
+            print("Disponibilité non définie, enseignant disponible")
             return True  # Enseignant toujours disponible
 
         if jour not in self.disponibilite:
+            print(f"Jour {jour} non défini, enseignant non disponible")
             return False  # Jour non défini, donc non disponible
 
         if periode not in self.disponibilite[jour]:
+            print(
+                f"Période {periode} non définie pour le jour {jour}, enseignant non disponible"
+            )
             return False  # Période non définie pour ce jour
 
-        return self.disponibilite[jour][periode]
+        dispo = self.disponibilite[jour][periode]
+        print(f"Disponibilité pour {jour} {periode}: {dispo}")
+        return dispo
 
     def __str__(self):
         return f"Enseignant {self.nom} (besoin salle: {self.besoin_salle})"
