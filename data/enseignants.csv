@@ -1,19 +1,19 @@
-id,nom,besoin_salle
-1,Anne Gagnebien,standard
-2,Hervé Zénouda,musique
-3,Michel Durampart,standard
-4,Franck Renucci,standard
-5,Philippe Bonfils,standard
-6,Lucia Granget,standard
-7,Véronique Ruiz,mac
-8,Sami Ben Amor,mac
-9,Billel Aroufoune,standard
-10,Sophie Monteil,standard
-11,Julien Chevron,standard
-12,Nathalie Trezza,pc_3d
-13,David Galli,standard
-14,Asma Djebbi,mac
-15,Alaric Tabaries,pc
-16,Emilie Mitran,standard
-17,Gaelle Picut,vieux_ordi
-18,Eric Marmottans,standard
+id,nom,besoin_salle,semaine_paire,semaine_impaire,lundi_matin,lundi_apres_midi,mardi_matin,mardi_apres_midi,mercredi_matin,mercredi_apres_midi,jeudi_matin,jeudi_apres_midi,vendredi_matin,vendredi_apres_midi
+1,Anne Gagnebien,standard,1,1,1,1,1,1,0,0,1,1,1,1
+2,Hervé Zénouda,musique,1,0,1,1,1,1,1,1,1,1,1,1
+3,Michel Durampart,standard,0,1,1,1,1,1,1,1,1,1,1,1
+4,Franck Renucci,standard,1,1,1,1,1,1,1,1,1,1,1,1
+5,Philippe Bonfils,standard,1,1,1,1,1,1,1,1,1,1,1,1
+6,Lucia Granget,standard,1,1,1,1,1,1,1,1,1,1,1,1
+7,Véronique Ruiz,mac,1,1,1,1,1,1,1,1,1,1,1,1
+8,Sami Ben Amor,mac,1,1,1,1,1,1,1,1,1,1,1,1
+9,Billel Aroufoune,standard,1,1,1,1,1,1,1,1,1,1,1,1
+10,Sophie Monteil,standard,1,1,1,1,1,1,1,1,1,1,1,1
+11,Julien Chevron,standard,1,1,1,1,1,1,1,1,1,1,1,1
+12,Nathalie Trezza,pc_3d,1,1,1,1,1,1,1,1,1,1,1,1
+13,David Galli,standard,1,1,1,1,1,1,1,1,1,1,1,1
+14,Asma Djebbi,mac,1,1,1,1,1,1,1,1,1,1,1,1
+15,Alaric Tabaries,pc,1,1,1,1,1,1,1,1,1,1,1,1
+16,Emilie Mitran,standard,1,1,1,1,1,1,1,1,1,1,1,1
+17,Gaelle Picut,vieux_ordi,1,1,1,1,1,1,1,1,1,1,1,1
+18,Eric Marmottans,standard,1,1,1,1,1,1,1,1,1,1,1,1

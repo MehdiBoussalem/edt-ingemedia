@@ -57,7 +57,15 @@ class Salle:
 class Enseignant:
     """Représente un enseignant."""
 
-    def __init__(self, id, nom, besoin_salle):
+    def __init__(
+        self,
+        id,
+        nom,
+        besoin_salle,
+        semaine_paire=True,
+        semaine_impaire=True,
+        disponibilite=None,
+    ):
         """
         Initialise un enseignant.
 
@@ -65,13 +73,47 @@ class Enseignant:
             id: Identifiant unique de l'enseignant
             nom: Nom de l'enseignant
             besoin_salle: Type de salle dont l'enseignant a besoin (standard, amphi, labo, etc.)
+            semaine_paire: True si l'enseignant est disponible les semaines paires, False sinon.
+            semaine_impaire: True si l'enseignant est disponible les semaines impaires, False sinon.
+            disponibilite: Dictionnaire représentant la disponibilité de l'enseignant.
+                           Ex: {
+                               "lundi": {"matin": True, "apres_midi": False},
+                               "mardi": {"matin": False, "apres_midi": True},
+                               ...
+                           }
+                           Si None, l'enseignant est considéré comme toujours disponible.
         """
         self.id = id
         self.nom = nom
         self.besoin_salle = besoin_salle
+        self.semaine_paire = semaine_paire
+        self.semaine_impaire = semaine_impaire
+        self.disponibilite = disponibilite
+
+    def est_disponible(self, jour, periode):
+        """
+        Vérifie si l'enseignant est disponible à un jour et période donnés.
+
+        Args:
+            jour: Jour de la semaine (ex: "lundi")
+            periode: Période de la journée ("matin" ou "apres_midi")
+
+        Returns:
+            True si l'enseignant est disponible, False sinon.
+        """
+        if self.disponibilite is None:
+            return True  # Enseignant toujours disponible
+
+        if jour not in self.disponibilite:
+            return False  # Jour non défini, donc non disponible
+
+        if periode not in self.disponibilite[jour]:
+            return False  # Période non définie pour ce jour
+
+        return self.disponibilite[jour][periode]
 
     def __str__(self):
-        return f"Enseignant {self.nom} (spécialité: {self.specialite})"
+        return f"Enseignant {self.nom} (besoin salle: {self.besoin_salle})"
 
 
 class Groupe:

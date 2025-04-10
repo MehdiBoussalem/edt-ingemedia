@@ -88,11 +88,22 @@ def charger_enseignants(fichier="data/enseignants.csv"):
             if (
                 row["id"].strip() and "id" not in row["id"]
             ):  # Ignorer les lignes de commentaire
+                # Charger les disponibilités depuis le CSV
+                semaine_paire = (
+                    int(row["semaine_paire"]) if "semaine_paire" in row else 1
+                )
+                semaine_impaire = (
+                    int(row["semaine_impaire"]) if "semaine_impaire" in row else 1
+                )
+                disponibilite = {}
                 enseignants.append(
                     model.Enseignant(
                         id=int(row["id"]),
                         nom=row["nom"],
                         besoin_salle=row["besoin_salle"],
+                        semaine_paire=semaine_paire,
+                        semaine_impaire=semaine_impaire,
+                        disponibilite=disponibilite,
                     )
                 )
     return enseignants

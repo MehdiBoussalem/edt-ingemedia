@@ -32,13 +32,37 @@ def ajouter_contrainte_enseignant_unicite(
 ):
     """Contrainte 2: Un enseignant ne peut pas donner deux séances qui se chevauchent."""
     for e in enseignants:
-        for s_idx in range(len(semaines)):
+        for s_idx, semaine in enumerate(semaines):
+            # Vérifier si l'enseignant est disponible cette semaine
+            if semaine % 2 == 0 and not e.semaine_paire:
+                continue  # Passer à la semaine suivante si l'enseignant n'est pas disponible les semaines paires
+            if semaine % 2 != 0 and not e.semaine_impaire:
+                continue  # Passer à la semaine suivante si l'enseignant n'est pas disponible les semaines impaires
+
             for j in range(nb_jours):
                 # Vérifier si le jour est disponible (non férié)
                 if calendrier[semaines[s_idx]][j] is None:
                     continue
 
+                JOURS_SEMAINE = [
+                    "lundi",
+                    "mardi",
+                    "mercredi",
+                    "jeudi",
+                    "vendredi",
+                    "samedi",
+                    "dimanche",
+                ]
+                jour_semaine = JOURS_SEMAINE[j].lower()
+
                 for cr in range(nb_creneaux_30min):
+                    # Déterminer si le créneau est le matin ou l'après-midi
+                    periode = "matin" if cr < 10 else "apres_midi"
+
+                    # Vérifier si l'enseignant est disponible pendant cette période
+                    if not e.est_disponible(jour_semaine, periode):
+                        continue  # Passer au créneau suivant si l'enseignant n'est pas disponible
+
                     # Trouver toutes les séances de cet enseignant qui utilisent ce créneau
                     seances_utilisant_creneau = []
 
