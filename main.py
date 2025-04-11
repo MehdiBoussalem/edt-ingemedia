@@ -1041,17 +1041,23 @@ class EmploiDuTemps:
                         <h4>Groupes :</h4>
                         <!-- Sera rempli dynamiquement -->
                     </div>
+                    <div id="enseignant-filters">
+                        <h4>Enseignants :</h4>
+                        <!-- Sera rempli dynamiquement -->
+                    </div>
                 </div>
             """
 
             # Organiser les données par semaine et jour
             calendar_data = {}
             groupes_uniques = set()
+            enseignants_uniques = set()
 
             for details in emploi_du_temps.values():
                 semaine = details["semaine"]
                 jour = details["jour"]
                 groupe = details["groupe"]
+                enseignant = details["enseignant"]
 
                 if semaine not in calendar_data:
                     calendar_data[semaine] = {}
@@ -1063,6 +1069,8 @@ class EmploiDuTemps:
 
                 for g in groupe.split(", "):
                     groupes_uniques.add(g.strip())
+
+                enseignants_uniques.add(enseignant.strip())
 
             # Créer les filtres de groupe
             html += """<script>
@@ -1087,6 +1095,17 @@ class EmploiDuTemps:
                         }
                     });
                 }
+
+                function filterByEnseignant(enseignant) {
+                    const events = document.querySelectorAll('.event');
+                    events.forEach(event => {
+                        if (enseignant === 'all' || event.getAttribute('data-enseignant') === enseignant) {
+                            event.classList.remove('hidden');
+                        } else {
+                            event.classList.add('hidden');
+                        }
+                    });
+                }
             </script>"""
 
             html += "<script>window.onload = function() {"
@@ -1097,6 +1116,14 @@ class EmploiDuTemps:
                 html += f"filterHtml += '<button onclick=\"filterByGroupe(\\'{groupe}\\')\">{groupe}</button>';"
 
             html += "groupeFilters.innerHTML = filterHtml;"
+
+            html += "const enseignantFilters = document.getElementById('enseignant-filters');"
+            html += "let enseignantFilterHtml = '<button onclick=\"filterByEnseignant(\\'all\\')\">Tous les enseignants</button>';"
+
+            for enseignant in sorted(enseignants_uniques):
+                html += f"enseignantFilterHtml += '<button onclick=\"filterByEnseignant(\\'{enseignant}\\')\">{enseignant}</button>';"
+
+            html += "enseignantFilters.innerHTML = enseignantFilterHtml;"
             html += "}</script>"
 
             # Générer le tableau par semaine
@@ -1125,7 +1152,7 @@ class EmploiDuTemps:
                             for event in calendar_data[semaine][jour]:
                                 if event["creneau"] == creneau:
                                     type_cours = event.get("type", "")
-                                    html += f"""<div class='event {type_cours}' data-groupe='{event["groupe"]}'>
+                                    html += f"""<div class='event {type_cours}' data-groupe='{event["groupe"]}' data-enseignant='{event["enseignant"]}'>
                                         <strong>{event["heure_debut"]}-{event["heure_fin"]}</strong>: {event["cours"]}<br>
                                         <small>
                                             Séance: {event["seance"]}<br>

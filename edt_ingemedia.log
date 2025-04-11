@@ -32916,33 +32916,33 @@ Toutes les contraintes ont été ajoutées au modèle.
 ================================================================================
 DÉMARRAGE DE LA RÉSOLUTION AVEC 16 THREADS PARALLÈLES
 ================================================================================
-Heure de début: 12:01:12
+Heure de début: 12:04:42
 Nombre de cœurs disponibles: 24
 Lancement de la résolution...
-Solution #1 trouvée après 0:00:22.549122
+Solution #1 trouvée après 0:00:23.529843
 Résolution terminée! 1 solutions trouvées.
-Heure de fin: 12:01:35
-Durée totale de résolution: 0:00:23.116939
+Heure de fin: 12:05:06
+Durée totale de résolution: 0:00:24.138447
 ================================================================================
-Nombre de branches explorées: 1675199
-Nombre de conflits: 572
+Nombre de branches explorées: 1409912
+Nombre de conflits: 673
 Nombre de solutions trouvées: CpSolverResponse summary:
 status: OPTIMAL
 objective: 0
 best_bound: 0
 integers: 92
 booleans: 190908
-conflicts: 572
-branches: 1675199
-propagations: 18598154
-integer_propagations: 1569788
-restarts: 495
+conflicts: 673
+branches: 1409912
+propagations: 17964908
+integer_propagations: 1507746
+restarts: 477
 lp_iterations: 0
-walltime: 22.6133
-usertime: 22.6133
-deterministic_time: 94.418
+walltime: 23.6403
+usertime: 23.6403
+deterministic_time: 111.773
 gap_integral: 0
-solution_fingerprint: 0x6352cd943964a052
+solution_fingerprint: 0x371ce0675bd15d8f
 
 ✅ Solution OPTIMALE trouvée ! Toutes les contraintes sont satisfaites.
 Export de l'emploi du temps vers un fichier ICS...
