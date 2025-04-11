@@ -522,7 +522,13 @@ def generer_seance(cours, groupes):
 
 class EmploiDuTemps:
     def __init__(
-        self, annee=2025, mois=4, semaines=None, jours_feries=None, date_debut=None
+        self,
+        annee=2025,
+        mois=4,
+        semaines=None,
+        jours_feries=None,
+        date_debut=None,
+        date_fin=None,
     ):
         """
         Initialise l'emploi du temps pour un mois et des semaines spécifiques.
@@ -533,11 +539,13 @@ class EmploiDuTemps:
             semaines: Liste des numéros de semaine à planifier (ex: [15, 16, 17, 18])
             jours_feries: Liste des dates fériées au format 'YYYY-MM-DD'
             date_debut: Date de début au format 'YYYY-MM-DD' (pour ignorer les jours avant cette date)
+            date_fin: Date de fin au format 'YYYY-MM-DD' (pour ignorer les jours après cette date)
         """
         self.annee = annee
         self.mois = mois
         self.jours_feries = jours_feries or []
         self.date_debut = date_debut
+        self.date_fin = date_fin
 
         # Constantes pour l'emploi du temps
         self.JOURS_SEMAINE = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"]
@@ -571,11 +579,21 @@ class EmploiDuTemps:
                     semaine, jour_idx + 1
                 )  # jour_idx + 1 car lundi = 1 dans isocalendar
 
-                # Vérifier si c'est un jour férié
-                if date.strftime("%Y-%m-%d") not in self.jours_feries:
+                # Vérifier si c'est un jour férié ou hors des limites de date_debut/date_fin
+                if (
+                    date.strftime("%Y-%m-%d") not in self.jours_feries
+                    and (
+                        not self.date_debut
+                        or date >= datetime.strptime(self.date_debut, "%Y-%m-%d")
+                    )
+                    and (
+                        not self.date_fin
+                        or date <= datetime.strptime(self.date_fin, "%Y-%m-%d")
+                    )
+                ):
                     self.calendrier[semaine][jour_idx] = date
                 else:
-                    # Jour férié = None
+                    # Jour férié ou hors des limites = None
                     self.calendrier[semaine][jour_idx] = None
 
         # Si une date de début est spécifiée, ignorer les jours avant cette date
@@ -750,9 +768,19 @@ class EmploiDuTemps:
 
         # Configuration du solveur
         solver = cp_model.CpSolver()
-        solver.parameters.num_search_workers = threads
-        solver.parameters.log_search_progress = True
+        solver.parameters.cp_model_probing_level = (
+            0  # Désactiver le probing pour faciliter la détection des conflits
+        )
+        solver.parameters.enumerate_all_solutions = (
+            False  # Ne pas chercher toutes les solutions
+        )
+        solver.parameters.log_search_progress = True  # Afficher les logs de progression
         solver.parameters.max_time_in_seconds = 7200  # Timeout de 2 heures
+        solver.parameters.cp_model_presolve = (
+            True  # Activer la simplification du modèle
+        )
+
+        solver.parameters.log_search_progress = True
 
         print("\n" + "=" * 80)
         print(f"DÉMARRAGE DE LA RÉSOLUTION AVEC {threads} THREADS PARALLÈLES")
@@ -806,7 +834,9 @@ class EmploiDuTemps:
             print(
                 "❌ Problème INFAISABLE - Aucune solution ne satisfait toutes les contraintes."
             )
-            print("   Vous devrez peut-être assouplir certaines contraintes.")
+            print("   Analyse des conflits pour identifier les causes...")
+            expliquer_infeasibilite(model, solver)
+            return None
         elif status == cp_model.MODEL_INVALID:
             print("❌ Modèle INVALIDE - Le modèle contient des erreurs.")
         else:
@@ -1029,17 +1059,23 @@ class EmploiDuTemps:
                         <h4>Groupes :</h4>
                         <!-- Sera rempli dynamiquement -->
                     </div>
+                    <div id="enseignant-filters">
+                        <h4>Enseignants :</h4>
+                        <!-- Sera rempli dynamiquement -->
+                    </div>
                 </div>
             """
 
             # Organiser les données par semaine et jour
             calendar_data = {}
             groupes_uniques = set()
+            enseignants_uniques = set()
 
             for details in emploi_du_temps.values():
                 semaine = details["semaine"]
                 jour = details["jour"]
                 groupe = details["groupe"]
+                enseignant = details["enseignant"]
 
                 if semaine not in calendar_data:
                     calendar_data[semaine] = {}
@@ -1051,6 +1087,8 @@ class EmploiDuTemps:
 
                 for g in groupe.split(", "):
                     groupes_uniques.add(g.strip())
+
+                enseignants_uniques.add(enseignant.strip())
 
             # Créer les filtres de groupe
             html += """<script>
@@ -1075,6 +1113,17 @@ class EmploiDuTemps:
                         }
                     });
                 }
+
+                function filterByEnseignant(enseignant) {
+                    const events = document.querySelectorAll('.event');
+                    events.forEach(event => {
+                        if (enseignant === 'all' || event.getAttribute('data-enseignant') === enseignant) {
+                            event.classList.remove('hidden');
+                        } else {
+                            event.classList.add('hidden');
+                        }
+                    });
+                }
             </script>"""
 
             html += "<script>window.onload = function() {"
@@ -1085,6 +1134,14 @@ class EmploiDuTemps:
                 html += f"filterHtml += '<button onclick=\"filterByGroupe(\\'{groupe}\\')\">{groupe}</button>';"
 
             html += "groupeFilters.innerHTML = filterHtml;"
+
+            html += "const enseignantFilters = document.getElementById('enseignant-filters');"
+            html += "let enseignantFilterHtml = '<button onclick=\"filterByEnseignant(\\'all\\')\">Tous les enseignants</button>';"
+
+            for enseignant in sorted(enseignants_uniques):
+                html += f"enseignantFilterHtml += '<button onclick=\"filterByEnseignant(\\'{enseignant}\\')\">{enseignant}</button>';"
+
+            html += "enseignantFilters.innerHTML = enseignantFilterHtml;"
             html += "}</script>"
 
             # Générer le tableau par semaine
@@ -1113,7 +1170,7 @@ class EmploiDuTemps:
                             for event in calendar_data[semaine][jour]:
                                 if event["creneau"] == creneau:
                                     type_cours = event.get("type", "")
-                                    html += f"""<div class='event {type_cours}' data-groupe='{event["groupe"]}'>
+                                    html += f"""<div class='event {type_cours}' data-groupe='{event["groupe"]}' data-enseignant='{event["enseignant"]}'>
                                         <strong>{event["heure_debut"]}-{event["heure_fin"]}</strong>: {event["cours"]}<br>
                                         <small>
                                             Séance: {event["seance"]}<br>
@@ -1147,6 +1204,14 @@ class EmploiDuTemps:
             return False
 
 
+def expliquer_infeasibilite(model, solver):
+    """Explique pourquoi le modèle est infaisable."""
+    print("\n=== Analyse des conflits ===")
+    infeasibility_report = solver.ResponseStats()
+    print(infeasibility_report)
+    print("=== Fin de l'analyse ===")
+
+
 # Exemple d'utilisation
 if __name__ == "__main__":
     # Chargement des données depuis les fichiers CSV
@@ -1178,10 +1243,25 @@ if __name__ == "__main__":
                 37,
                 38,
                 39,
-                40,
-            ],  # Semaines de septembre 2025
+                41,
+                42,
+                43,
+                45,
+                46,
+                47,
+                48,
+                50,
+                51,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+            ],  # Semaines du 9 septembre 2025 au 16 janvier 2026 (exclusions appliquées)
             jours_feries=jours_feries,
-            date_debut="2025-09-09",  # Commencer le 12 septembre
+            date_debut="2025-09-09",  # Commencer le 9 septembre
+            date_fin="2026-01-16",
         )
 
         print("Génération de l'emploi du temps à partir du 12 septembre 2025...")

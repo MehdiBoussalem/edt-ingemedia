@@ -24,55 +24,16 @@ def ajouter_contrainte_enseignant_unicite(
     seance_vars,
     seances,
     salles,
-    calendrier,
-    semaines,
+    nb_semaines,
     nb_jours,
     nb_creneaux_30min,
     enseignants,
 ):
-    """Contrainte 2: Un enseignant ne peut pas donner deux séances qui se chevauchent."""
+    """Contrainte: Un enseignant ne peut pas donner deux cours qui se chevauchent."""
     for e in enseignants:
-        print(
-            f"Enseignant: {e.nom}, semaine_paire={e.semaine_paire}, semaine_impaire={e.semaine_impaire}"
-        )
-        for s_idx, semaine in enumerate(semaines):
-            # Vérifier si l'enseignant est disponible cette semaine
-            est_semaine_paire = semaine % 2 == 0
-            if est_semaine_paire and not e.semaine_paire:
-                print(f"Semaine {semaine} paire, enseignant {e.nom} indisponible")
-                continue  # Passer à la semaine suivante si l'enseignant n'est pas disponible les semaines paires
-            if not est_semaine_paire and not e.semaine_impaire:
-                print(f"Semaine {semaine} impaire, enseignant {e.nom} indisponible")
-                continue  # Passer à la semaine suivante si l'enseignant n'est pas disponible les semaines impaires
-
+        for s_idx in range(nb_semaines):
             for j in range(nb_jours):
-                # Vérifier si le jour est disponible (non férié)
-                if calendrier[semaines[s_idx]][j] is None:
-                    print(f"Semaine {semaine}, jour {j} non disponible")
-                    continue
-
-                JOURS_SEMAINE = [
-                    "lundi",
-                    "mardi",
-                    "mercredi",
-                    "jeudi",
-                    "vendredi",
-                    "samedi",
-                    "dimanche",
-                ]
-                jour_semaine = JOURS_SEMAINE[j].lower()
-
                 for cr in range(nb_creneaux_30min):
-                    # Déterminer si le créneau est le matin ou l'après-midi
-                    periode = "matin" if cr < 10 else "apres_midi"
-
-                    # Vérifier si l'enseignant est disponible pendant cette période
-                    if not e.est_disponible(jour_semaine, periode):
-                        print(
-                            f"Enseignant {e.nom}, jour {jour_semaine}, periode {periode} non disponible"
-                        )
-                        continue  # Passer au créneau suivant si l'enseignant n'est pas disponible
-
                     # Trouver toutes les séances de cet enseignant qui utilisent ce créneau
                     seances_utilisant_creneau = []
 
@@ -99,6 +60,7 @@ def ajouter_contrainte_enseignant_unicite(
                                             ]
                                         )
 
+                    # Ajouter la contrainte : un enseignant ne peut pas donner plus d'un cours en même temps
                     if len(seances_utilisant_creneau) > 1:
                         model.Add(sum(seances_utilisant_creneau) <= 1)
 
@@ -693,6 +655,92 @@ def ajouter_contrainte_ordre_seances(
     return contraintes_ajoutees
 
 
+def ajouter_contrainte_disponibilite_enseignant(
+    model,
+    seance_vars,
+    seances,
+    salles,
+    calendrier,
+    semaines,
+    nb_jours,
+    nb_creneaux_30min,
+    enseignants,
+):
+    """Contrainte: Vérifie que les enseignants sont disponibles pour leurs cours."""
+    for e in enseignants:  # Parcourir les enseignants
+        for s_idx, semaine in enumerate(semaines):  # Parcourir les semaines
+            # Vérifier si la semaine est paire ou impaire
+            est_semaine_paire = semaine % 2 == 0
+
+            # Vérifier la disponibilité de l'enseignant pour cette semaine
+            if (est_semaine_paire and not e.semaine_paire) or (
+                not est_semaine_paire and not e.semaine_impaire
+            ):
+                # Si l'enseignant n'est pas disponible pour cette semaine, le rendre indisponible pour toute la semaine
+                for j in range(nb_jours):
+                    for cr in range(nb_creneaux_30min):
+                        for s in seances:
+                            if s.cours.enseignant.id == e.id:
+                                for sa in salles:
+                                    if (
+                                        s.id_seance,
+                                        s_idx,
+                                        j,
+                                        cr,
+                                        sa.id,
+                                    ) in seance_vars:
+                                        model.Add(
+                                            seance_vars[
+                                                (s.id_seance, s_idx, j, cr, sa.id)
+                                            ]
+                                            == 0
+                                        )
+            else:
+                # Si l'enseignant est disponible pour cette semaine, vérifier les jours et créneaux
+                for j in range(nb_jours):
+                    # Vérifier si le jour est disponible (non férié)
+                    if calendrier[semaines[s_idx]][j] is None:
+                        continue
+
+                    JOURS_SEMAINE = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"]
+                    jour_semaine = JOURS_SEMAINE[j].lower()
+
+                    for cr in range(nb_creneaux_30min):
+                        # Déterminer si le créneau est le matin ou l'après-midi
+                        periode = "matin" if cr < 10 else "apres_midi"
+
+                        # Vérifier si l'enseignant est disponible pendant cette période
+                        if not e.est_disponible(jour_semaine, periode):
+                            for s in seances:
+                                if s.cours.enseignant.id == e.id:
+                                    duree_creneaux = int(s.duree * 60 / 30)
+
+                                    for cr_debut in range(
+                                        max(0, cr - duree_creneaux + 1), cr + 1
+                                    ):
+                                        for sa in salles:
+                                            if (
+                                                s.id_seance,
+                                                s_idx,
+                                                j,
+                                                cr_debut,
+                                                sa.id,
+                                            ) in seance_vars:
+                                                # Empêcher l'affectation de la séance à ce créneau
+                                                model.Add(
+                                                    seance_vars[
+                                                        (
+                                                            s.id_seance,
+                                                            s_idx,
+                                                            j,
+                                                            cr_debut,
+                                                            sa.id,
+                                                        )
+                                                    ]
+                                                    == 0
+                                                )
+
+
 def ajouter_toutes_contraintes(
     model,
     seance_vars,
@@ -707,24 +755,6 @@ def ajouter_toutes_contraintes(
     pause_debut=8,  # 12h00 (=8h00 + 4h00)
     pause_fin=12,  # 14h00 (=8h00 + 6h00)
 ):
-    """
-    Ajoute toutes les contraintes nécessaires au modèle d'emploi du temps.
-
-    Args:
-        model: Modèle CP-SAT
-        seance_vars: Dictionnaire des variables de décision
-        seances: Liste des séances à planifier
-        salles: Liste des salles disponibles
-        calendrier: Structure représentant le calendrier
-        semaines: Liste des semaines à planifier
-        nb_jours: Nombre de jours par semaine
-        nb_creneaux_30min: Nombre de créneaux de 30 minutes par jour
-        enseignants: Liste des enseignants
-        groupes: Liste des groupes d'étudiants
-        pause_debut: Indice du créneau de début de la pause déjeuner (défaut: 8 = 12h00)
-        pause_fin: Indice du créneau de fin de la pause déjeuner (défaut: 12 = 14h00)
-    """
-
     # 1. Chaque séance doit être planifiée exactement une fois
     print("Ajout de la contrainte de séance unique...")
     ajouter_contrainte_seance_unique(
@@ -738,6 +768,19 @@ def ajouter_toutes_contraintes(
         seance_vars,
         seances,
         salles,
+        len(semaines),
+        nb_jours,
+        nb_creneaux_30min,
+        enseignants,
+    )
+
+    # 3. Vérifier les disponibilités des enseignants
+    print("Ajout de la contrainte de disponibilité des enseignants...")
+    ajouter_contrainte_disponibilite_enseignant(
+        model,
+        seance_vars,
+        seances,
+        salles,
         calendrier,
         semaines,
         nb_jours,
@@ -745,6 +788,7 @@ def ajouter_toutes_contraintes(
         enseignants,
     )
 
+    # (Ajoutez les autres contraintes ici comme avant)
     # 3. Un groupe ne peut pas suivre deux séances qui se chevauchent
     print("Ajout de la contrainte d'unicité pour les groupes...")
     ajouter_contrainte_groupe_unicite(

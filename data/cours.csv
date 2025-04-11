@@ -13,5 +13,13 @@ id_cours,nom,enseignant,groupes,duree_total,max_duration,type_cours
 12,Médias et numériques,9,"DASI,CINPM,CDE",10,2.5,CM
 13,Environnement juridique,10,"DASI,CINPM,CDE",10,2.5,CM
 14,Anglais,11,"CDE",18,3,TD
-
-
+15,Production de contenus vidéos,12,"CDE",14,3,TD
+16,Contenus pour réseaux sociaux numériques,13,"CDE",14,3,TD
+17,Communication digitale et éditoriale,9,"CDE",7,2.5,CM
+18,Communication digitale et éditoriale,14,"CDE",14,3,TD
+19,Développement et référencement,8,"CDE",10.5,3,TD
+20,Développement et référencement,15,"CDE",14,3,TD
+21,Design graphique,14,"CDE",10.5,3,TD
+22,Analyse critique des médias,3,"CDE_1",14,3,TD
+23,Analyse critique des médias,9,"CDE_2",14,3,TD
+24,Communication et storytelling,9,"CDE_1",14,3,TD
