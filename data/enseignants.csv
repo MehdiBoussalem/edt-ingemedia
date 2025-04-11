@@ -1,7 +1,7 @@
 id,nom,besoin_salle,semaine_paire,semaine_impaire,lundi_matin,lundi_apres_midi,mardi_matin,mardi_apres_midi,mercredi_matin,mercredi_apres_midi,jeudi_matin,jeudi_apres_midi,vendredi_matin,vendredi_apres_midi
-1,Anne Gagnebien,standard,1,1,1,1,1,1,0,0,1,1,1,1
-2,Hervé Zénouda,musique,1,0,1,1,1,1,1,1,1,1,1,1
-3,Michel Durampart,standard,0,1,1,1,1,1,1,1,1,1,1,1
+1,Anne Gagnebien,standard,1,1,1,1,1,1,1,1,1,1,1,1
+2,Hervé Zénouda,musique,1,1,1,1,1,1,1,1,1,1,1,1
+3,Michel Durampart,standard,1,1,1,1,1,1,1,1,1,1,1,1
 4,Franck Renucci,standard,0,1,0,0,1,1,1,1,1,1,1,1
 5,Philippe Bonfils,standard,1,1,0,1,0,1,1,1,1,1,1,1
 6,Lucia Granget,standard,1,1,1,1,1,1,1,1,1,1,1,1
@@ -9,7 +9,7 @@ id,nom,besoin_salle,semaine_paire,semaine_impaire,lundi_matin,lundi_apres_midi,m
 8,Sami Ben Amor,mac,1,1,1,1,1,1,0,0,1,1,1,1
 9,Billel Aroufoune,standard,1,1,1,1,1,1,1,1,1,1,1,1
 10,Sophie Monteil,standard,1,1,1,1,1,1,1,1,1,1,1,1
-11,Julien Chevron,standard,1,1,1,0,1,1,1,0,1,0,1,0
+11,Julien Chevron,standard,1,1,1,1,1,1,1,1,1,1,1,1
 12,Nathalie Trezza,pc_3d,1,1,1,1,1,1,1,1,1,1,1,1
 13,David Galli,standard,1,1,1,1,1,1,1,1,1,1,1,1
 14,Asma Djebbi,mac,1,1,1,1,1,1,1,1,1,1,1,1

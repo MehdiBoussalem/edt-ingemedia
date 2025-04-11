@@ -750,9 +750,19 @@ class EmploiDuTemps:
 
         # Configuration du solveur
         solver = cp_model.CpSolver()
-        solver.parameters.num_search_workers = threads
-        solver.parameters.log_search_progress = True
+        solver.parameters.cp_model_probing_level = (
+            0  # Désactiver le probing pour faciliter la détection des conflits
+        )
+        solver.parameters.enumerate_all_solutions = (
+            False  # Ne pas chercher toutes les solutions
+        )
+        solver.parameters.log_search_progress = True  # Afficher les logs de progression
         solver.parameters.max_time_in_seconds = 7200  # Timeout de 2 heures
+        solver.parameters.cp_model_presolve = (
+            True  # Activer la simplification du modèle
+        )
+
+        solver.parameters.log_search_progress = True
 
         print("\n" + "=" * 80)
         print(f"DÉMARRAGE DE LA RÉSOLUTION AVEC {threads} THREADS PARALLÈLES")
@@ -806,7 +816,9 @@ class EmploiDuTemps:
             print(
                 "❌ Problème INFAISABLE - Aucune solution ne satisfait toutes les contraintes."
             )
-            print("   Vous devrez peut-être assouplir certaines contraintes.")
+            print("   Analyse des conflits pour identifier les causes...")
+            expliquer_infeasibilite(model, solver)
+            return None
         elif status == cp_model.MODEL_INVALID:
             print("❌ Modèle INVALIDE - Le modèle contient des erreurs.")
         else:
@@ -1147,6 +1159,14 @@ class EmploiDuTemps:
             return False
 
 
+def expliquer_infeasibilite(model, solver):
+    """Explique pourquoi le modèle est infaisable."""
+    print("\n=== Analyse des conflits ===")
+    infeasibility_report = solver.ResponseStats()
+    print(infeasibility_report)
+    print("=== Fin de l'analyse ===")
+
+
 # Exemple d'utilisation
 if __name__ == "__main__":
     # Chargement des données depuis les fichiers CSV
@@ -1179,6 +1199,10 @@ if __name__ == "__main__":
                 38,
                 39,
                 40,
+                41,
+                42,
+                43,
+                44,
             ],  # Semaines de septembre 2025
             jours_feries=jours_feries,
             date_debut="2025-09-09",  # Commencer le 12 septembre
