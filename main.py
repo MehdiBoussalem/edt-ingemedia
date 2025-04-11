@@ -522,7 +522,13 @@ def generer_seance(cours, groupes):
 
 class EmploiDuTemps:
     def __init__(
-        self, annee=2025, mois=4, semaines=None, jours_feries=None, date_debut=None
+        self,
+        annee=2025,
+        mois=4,
+        semaines=None,
+        jours_feries=None,
+        date_debut=None,
+        date_fin=None,
     ):
         """
         Initialise l'emploi du temps pour un mois et des semaines spécifiques.
@@ -533,11 +539,13 @@ class EmploiDuTemps:
             semaines: Liste des numéros de semaine à planifier (ex: [15, 16, 17, 18])
             jours_feries: Liste des dates fériées au format 'YYYY-MM-DD'
             date_debut: Date de début au format 'YYYY-MM-DD' (pour ignorer les jours avant cette date)
+            date_fin: Date de fin au format 'YYYY-MM-DD' (pour ignorer les jours après cette date)
         """
         self.annee = annee
         self.mois = mois
         self.jours_feries = jours_feries or []
         self.date_debut = date_debut
+        self.date_fin = date_fin
 
         # Constantes pour l'emploi du temps
         self.JOURS_SEMAINE = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"]
@@ -571,11 +579,21 @@ class EmploiDuTemps:
                     semaine, jour_idx + 1
                 )  # jour_idx + 1 car lundi = 1 dans isocalendar
 
-                # Vérifier si c'est un jour férié
-                if date.strftime("%Y-%m-%d") not in self.jours_feries:
+                # Vérifier si c'est un jour férié ou hors des limites de date_debut/date_fin
+                if (
+                    date.strftime("%Y-%m-%d") not in self.jours_feries
+                    and (
+                        not self.date_debut
+                        or date >= datetime.strptime(self.date_debut, "%Y-%m-%d")
+                    )
+                    and (
+                        not self.date_fin
+                        or date <= datetime.strptime(self.date_fin, "%Y-%m-%d")
+                    )
+                ):
                     self.calendrier[semaine][jour_idx] = date
                 else:
-                    # Jour férié = None
+                    # Jour férié ou hors des limites = None
                     self.calendrier[semaine][jour_idx] = None
 
         # Si une date de début est spécifiée, ignorer les jours avant cette date
@@ -1225,14 +1243,25 @@ if __name__ == "__main__":
                 37,
                 38,
                 39,
-                40,
                 41,
                 42,
                 43,
-                44,
-            ],  # Semaines de septembre 2025
+                45,
+                46,
+                47,
+                48,
+                50,
+                51,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+            ],  # Semaines du 9 septembre 2025 au 16 janvier 2026 (exclusions appliquées)
             jours_feries=jours_feries,
-            date_debut="2025-09-09",  # Commencer le 12 septembre
+            date_debut="2025-09-09",  # Commencer le 9 septembre
+            date_fin="2026-01-16",
         )
 
         print("Génération de l'emploi du temps à partir du 12 septembre 2025...")
