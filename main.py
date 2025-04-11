@@ -30,7 +30,7 @@ logging.basicConfig(
 class Logger(object):
     def __init__(self):
         self.terminal = sys.stdout
-        self.log = open("edt_ingemedia.log", "w")
+        self.log = open("edt_ingemedia.log", "w", encoding="utf-8")
 
     def write(self, message):
         self.terminal.write(message)
