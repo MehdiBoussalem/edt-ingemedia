@@ -5,8 +5,8 @@ BEGIN:VEVENT
 SUMMARY:Industries culturelles et créatives numériques Gagnebien (CM) - 
  Master_DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Sé
  ance: S1_1_1
-DTSTART;TZID=Europe/Paris:20250915T130000
-DTEND;TZID=Europe/Paris:20250915T153000
+DTSTART;TZID=Europe/Paris:20250915T140000
+DTEND;TZID=Europe/Paris:20250915T163000
 UID:S1_1_1_38_0@ingemedia.fr
 DESCRIPTION:Séance: S1_1_1\nEnseignant: Anne Gagnebien\nGroupe: Master_DA
  SI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDur
@@ -17,9 +17,9 @@ BEGIN:VEVENT
 SUMMARY:Industries culturelles et créatives numériques Gagnebien (CM) - 
  Master_DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Sé
  ance: S2_1_2
-DTSTART;TZID=Europe/Paris:20251006T150000
-DTEND;TZID=Europe/Paris:20251006T173000
-UID:S2_1_2_41_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250915T173000
+DTEND;TZID=Europe/Paris:20250915T200000
+UID:S2_1_2_38_0@ingemedia.fr
 DESCRIPTION:Séance: S2_1_2\nEnseignant: Anne Gagnebien\nGroupe: Master_DA
  SI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDur
  ée: 150 minutes
@@ -29,9 +29,9 @@ BEGIN:VEVENT
 SUMMARY:Industries culturelles et créatives numériques Gagnebien (CM) - 
  Master_DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Sé
  ance: S3_1_3
-DTSTART;TZID=Europe/Paris:20251006T173000
-DTEND;TZID=Europe/Paris:20251006T200000
-UID:S3_1_3_41_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250918T100000
+DTEND;TZID=Europe/Paris:20250918T123000
+UID:S3_1_3_38_3@ingemedia.fr
 DESCRIPTION:Séance: S3_1_3\nEnseignant: Anne Gagnebien\nGroupe: Master_DA
  SI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDur
  ée: 150 minutes
@@ -41,9 +41,9 @@ BEGIN:VEVENT
 SUMMARY:Industries culturelles et créatives numériques Gagnebien (CM) - 
  Master_DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Sé
  ance: S4_1_4
-DTSTART;TZID=Europe/Paris:20251014T133000
-DTEND;TZID=Europe/Paris:20251014T160000
-UID:S4_1_4_42_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250923T130000
+DTEND;TZID=Europe/Paris:20250923T153000
+UID:S4_1_4_39_1@ingemedia.fr
 DESCRIPTION:Séance: S4_1_4\nEnseignant: Anne Gagnebien\nGroupe: Master_DA
  SI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDur
  ée: 150 minutes
@@ -53,9 +53,9 @@ BEGIN:VEVENT
 SUMMARY:Industries culturelles et créatives numériques Gagnebien (CM) - 
  Master_DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Sé
  ance: S5_1_5
-DTSTART;TZID=Europe/Paris:20251125T150000
-DTEND;TZID=Europe/Paris:20251125T163000
-UID:S5_1_5_48_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250925T080000
+DTEND;TZID=Europe/Paris:20250925T093000
+UID:S5_1_5_39_3@ingemedia.fr
 DESCRIPTION:Séance: S5_1_5\nEnseignant: Anne Gagnebien\nGroupe: Master_DA
  SI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDur
  ée: 90 minutes
@@ -65,9 +65,9 @@ BEGIN:VEVENT
 SUMMARY:Industries culturelles et créatives numériques Zenouda (CM) - Ma
  ster_DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séan
  ce: S6_2_1
-DTSTART;TZID=Europe/Paris:20251007T130000
-DTEND;TZID=Europe/Paris:20251007T160000
-UID:S6_2_1_41_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251013T170000
+DTEND;TZID=Europe/Paris:20251013T200000
+UID:S6_2_1_42_0@ingemedia.fr
 DESCRIPTION:Séance: S6_2_1\nEnseignant: Hervé Zénouda\nGroupe: Master_D
  ASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDu
  rée: 180 minutes
@@ -77,9 +77,9 @@ BEGIN:VEVENT
 SUMMARY:Industries culturelles et créatives numériques Zenouda (CM) - Ma
  ster_DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séan
  ce: S7_2_2
-DTSTART;TZID=Europe/Paris:20251127T080000
-DTEND;TZID=Europe/Paris:20251127T110000
-UID:S7_2_2_48_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251016T090000
+DTEND;TZID=Europe/Paris:20251016T120000
+UID:S7_2_2_42_3@ingemedia.fr
 DESCRIPTION:Séance: S7_2_2\nEnseignant: Hervé Zénouda\nGroupe: Master_D
  ASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDu
  rée: 180 minutes
@@ -88,9 +88,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Théories et pratiques scientifiques en SIC (CM) - Master_DASI\, M
  aster_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S8_3_1
-DTSTART;TZID=Europe/Paris:20251007T160000
-DTEND;TZID=Europe/Paris:20251007T183000
-UID:S8_3_1_41_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250922T130000
+DTEND;TZID=Europe/Paris:20250922T153000
+UID:S8_3_1_39_0@ingemedia.fr
 DESCRIPTION:Séance: S8_3_1\nEnseignant: Michel Durampart\nGroupe: Master_
  DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nD
  urée: 150 minutes
@@ -99,9 +99,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Théories et pratiques scientifiques en SIC (CM) - Master_DASI\, M
  aster_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S9_3_2
-DTSTART;TZID=Europe/Paris:20251013T140000
-DTEND;TZID=Europe/Paris:20251013T163000
-UID:S9_3_2_42_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251021T143000
+DTEND;TZID=Europe/Paris:20251021T170000
+UID:S9_3_2_43_1@ingemedia.fr
 DESCRIPTION:Séance: S9_3_2\nEnseignant: Michel Durampart\nGroupe: Master_
  DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nD
  urée: 150 minutes
@@ -110,9 +110,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Théories et pratiques scientifiques en SIC (CM) - Master_DASI\, M
  aster_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S10_3_3
-DTSTART;TZID=Europe/Paris:20251013T173000
-DTEND;TZID=Europe/Paris:20251013T200000
-UID:S10_3_3_42_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251103T170000
+DTEND;TZID=Europe/Paris:20251103T193000
+UID:S10_3_3_45_0@ingemedia.fr
 DESCRIPTION:Séance: S10_3_3\nEnseignant: Michel Durampart\nGroupe: Master
  _DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\n
  Durée: 150 minutes
@@ -121,9 +121,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Théories et pratiques scientifiques en SIC (CM) - Master_DASI\, M
  aster_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S11_3_4
-DTSTART;TZID=Europe/Paris:20251014T173000
-DTEND;TZID=Europe/Paris:20251014T200000
-UID:S11_3_4_42_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251110T163000
+DTEND;TZID=Europe/Paris:20251110T190000
+UID:S11_3_4_46_0@ingemedia.fr
 DESCRIPTION:Séance: S11_3_4\nEnseignant: Michel Durampart\nGroupe: Master
  _DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\n
  Durée: 150 minutes
@@ -132,9 +132,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Théories et pratiques scientifiques en SIC (CM) - Master_DASI\, M
  aster_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S12_3_5
-DTSTART;TZID=Europe/Paris:20251020T170000
-DTEND;TZID=Europe/Paris:20251020T193000
-UID:S12_3_5_43_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251120T103000
+DTEND;TZID=Europe/Paris:20251120T130000
+UID:S12_3_5_47_3@ingemedia.fr
 DESCRIPTION:Séance: S12_3_5\nEnseignant: Michel Durampart\nGroupe: Master
  _DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\n
  Durée: 150 minutes
@@ -143,9 +143,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Théories et pratiques scientifiques en SIC (CM) - Master_DASI\, M
  aster_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S13_3_6
-DTSTART;TZID=Europe/Paris:20251117T133000
-DTEND;TZID=Europe/Paris:20251117T160000
-UID:S13_3_6_47_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251124T143000
+DTEND;TZID=Europe/Paris:20251124T170000
+UID:S13_3_6_48_0@ingemedia.fr
 DESCRIPTION:Séance: S13_3_6\nEnseignant: Michel Durampart\nGroupe: Master
  _DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\n
  Durée: 150 minutes
@@ -154,9 +154,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Théories et pratiques scientifiques en SIC (CM) - Master_DASI\, M
  aster_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S14_3_7
-DTSTART;TZID=Europe/Paris:20251208T173000
-DTEND;TZID=Europe/Paris:20251208T200000
-UID:S14_3_7_50_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251209T170000
+DTEND;TZID=Europe/Paris:20251209T193000
+UID:S14_3_7_50_1@ingemedia.fr
 DESCRIPTION:Séance: S14_3_7\nEnseignant: Michel Durampart\nGroupe: Master
  _DASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\n
  Durée: 150 minutes
@@ -165,9 +165,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Humanités et environnements numériques (CM) - Master_DASI\, Mast
  er_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S15_4_1
-DTSTART;TZID=Europe/Paris:20251009T093000
-DTEND;TZID=Europe/Paris:20251009T120000
-UID:S15_4_1_41_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251007T173000
+DTEND;TZID=Europe/Paris:20251007T200000
+UID:S15_4_1_41_1@ingemedia.fr
 DESCRIPTION:Séance: S15_4_1\nEnseignant: Franck Renucci\nGroupe: Master_D
  ASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDu
  rée: 150 minutes
@@ -176,9 +176,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Humanités et environnements numériques (CM) - Master_DASI\, Mast
  er_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S16_4_2
-DTSTART;TZID=Europe/Paris:20251021T130000
-DTEND;TZID=Europe/Paris:20251021T153000
-UID:S16_4_2_43_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251104T133000
+DTEND;TZID=Europe/Paris:20251104T160000
+UID:S16_4_2_45_1@ingemedia.fr
 DESCRIPTION:Séance: S16_4_2\nEnseignant: Franck Renucci\nGroupe: Master_D
  ASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDu
  rée: 150 minutes
@@ -187,9 +187,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Humanités et environnements numériques (CM) - Master_DASI\, Mast
  er_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S17_4_3
-DTSTART;TZID=Europe/Paris:20251021T173000
-DTEND;TZID=Europe/Paris:20251021T200000
-UID:S17_4_3_43_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251104T160000
+DTEND;TZID=Europe/Paris:20251104T183000
+UID:S17_4_3_45_1@ingemedia.fr
 DESCRIPTION:Séance: S17_4_3\nEnseignant: Franck Renucci\nGroupe: Master_D
  ASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDu
  rée: 150 minutes
@@ -198,9 +198,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Humanités et environnements numériques (CM) - Master_DASI\, Mast
  er_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S18_4_4
-DTSTART;TZID=Europe/Paris:20251104T173000
-DTEND;TZID=Europe/Paris:20251104T200000
-UID:S18_4_4_45_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251106T083000
+DTEND;TZID=Europe/Paris:20251106T110000
+UID:S18_4_4_45_3@ingemedia.fr
 DESCRIPTION:Séance: S18_4_4\nEnseignant: Franck Renucci\nGroupe: Master_D
  ASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDu
  rée: 150 minutes
@@ -209,8 +209,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Humanités et environnements numériques (CM) - Master_DASI\, Mast
  er_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S19_4_5
-DTSTART;TZID=Europe/Paris:20251118T130000
-DTEND;TZID=Europe/Paris:20251118T153000
+DTSTART;TZID=Europe/Paris:20251118T150000
+DTEND;TZID=Europe/Paris:20251118T173000
 UID:S19_4_5_47_1@ingemedia.fr
 DESCRIPTION:Séance: S19_4_5\nEnseignant: Franck Renucci\nGroupe: Master_D
  ASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDu
@@ -220,9 +220,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Humanités et environnements numériques (CM) - Master_DASI\, Mast
  er_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S20_4_6
-DTSTART;TZID=Europe/Paris:20251120T080000
-DTEND;TZID=Europe/Paris:20251120T103000
-UID:S20_4_6_47_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251118T173000
+DTEND;TZID=Europe/Paris:20251118T200000
+UID:S20_4_6_47_1@ingemedia.fr
 DESCRIPTION:Séance: S20_4_6\nEnseignant: Franck Renucci\nGroupe: Master_D
  ASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDu
  rée: 150 minutes
@@ -231,8 +231,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Humanités et environnements numériques (CM) - Master_DASI\, Mast
  er_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM - Séance: S21_4_7
-DTSTART;TZID=Europe/Paris:20251120T103000
-DTEND;TZID=Europe/Paris:20251120T130000
+DTSTART;TZID=Europe/Paris:20251120T080000
+DTEND;TZID=Europe/Paris:20251120T103000
 UID:S21_4_7_47_3@ingemedia.fr
 DESCRIPTION:Séance: S21_4_7\nEnseignant: Franck Renucci\nGroupe: Master_D
  ASI\, Master_ACNCC\, Master_CDE\, Master_DEDI\, Master_CINPM\nType: CM\nDu
@@ -242,9 +242,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (CM) - Master_DASI\, Master_CINP
  M\, Master_CDE - Séance: S22_5_1
-DTSTART;TZID=Europe/Paris:20250926T133000
-DTEND;TZID=Europe/Paris:20250926T160000
-UID:S22_5_1_39_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250925T130000
+DTEND;TZID=Europe/Paris:20250925T153000
+UID:S22_5_1_39_3@ingemedia.fr
 DESCRIPTION:Séance: S22_5_1\nEnseignant: Philippe Bonfils\nGroupe: Master
  _DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -252,19 +252,19 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (CM) - Master_DASI\, Master_CINP
  M\, Master_CDE - Séance: S23_5_2
-DTSTART;TZID=Europe/Paris:20251023T083000
-DTEND;TZID=Europe/Paris:20251023T110000
-UID:S23_5_2_43_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251126T140000
+DTEND;TZID=Europe/Paris:20251126T163000
+UID:S23_5_2_48_2@ingemedia.fr
 DESCRIPTION:Séance: S23_5_2\nEnseignant: Philippe Bonfils\nGroupe: Master
  _DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
-LOCATION:Salle FA001
+LOCATION:Salle AMPHI110
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (CM) - Master_DASI\, Master_CINP
  M\, Master_CDE - Séance: S24_5_3
-DTSTART;TZID=Europe/Paris:20251119T143000
-DTEND;TZID=Europe/Paris:20251119T170000
-UID:S24_5_3_47_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251126T173000
+DTEND;TZID=Europe/Paris:20251126T200000
+UID:S24_5_3_48_2@ingemedia.fr
 DESCRIPTION:Séance: S24_5_3\nEnseignant: Philippe Bonfils\nGroupe: Master
  _DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -272,8 +272,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (CM) - Master_DASI\, Master_CINP
  M\, Master_CDE - Séance: S25_5_4
-DTSTART;TZID=Europe/Paris:20251128T083000
-DTEND;TZID=Europe/Paris:20251128T110000
+DTSTART;TZID=Europe/Paris:20251128T130000
+DTEND;TZID=Europe/Paris:20251128T153000
 UID:S25_5_4_48_4@ingemedia.fr
 DESCRIPTION:Séance: S25_5_4\nEnseignant: Philippe Bonfils\nGroupe: Master
  _DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
@@ -287,104 +287,104 @@ DTEND;TZID=Europe/Paris:20250909T160000
 UID:S26_6_DASI_1_37_1@ingemedia.fr
 DESCRIPTION:Séance: S26_6_DASI_1\nEnseignant: Philippe Bonfils\nGroupe: M
  aster_DASI\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO701
+LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (TD) - Master_DASI - Séance: S2
  7_6_DASI_2
-DTSTART;TZID=Europe/Paris:20251107T080000
-DTEND;TZID=Europe/Paris:20251107T110000
-UID:S27_6_DASI_2_45_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251008T143000
+DTEND;TZID=Europe/Paris:20251008T173000
+UID:S27_6_DASI_2_41_2@ingemedia.fr
 DESCRIPTION:Séance: S27_6_DASI_2\nEnseignant: Philippe Bonfils\nGroupe: M
  aster_DASI\nType: TD\nDurée: 180 minutes
-LOCATION:Salle AMPHI110
+LOCATION:Salle CO701
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (TD) - Master_CINPM_A - Séance:
   S28_6_CINPM_1_1
-DTSTART;TZID=Europe/Paris:20251009T133000
-DTEND;TZID=Europe/Paris:20251009T163000
-UID:S28_6_CINPM_1_1_41_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250909T163000
+DTEND;TZID=Europe/Paris:20250909T193000
+UID:S28_6_CINPM_1_1_37_1@ingemedia.fr
 DESCRIPTION:Séance: S28_6_CINPM_1_1\nEnseignant: Philippe Bonfils\nGroupe
  : Master_CINPM_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO416
+LOCATION:Salle CO701
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (TD) - Master_CINPM_A - Séance:
   S29_6_CINPM_1_2
-DTSTART;TZID=Europe/Paris:20251126T163000
-DTEND;TZID=Europe/Paris:20251126T193000
-UID:S29_6_CINPM_1_2_48_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251013T140000
+DTEND;TZID=Europe/Paris:20251013T170000
+UID:S29_6_CINPM_1_2_42_0@ingemedia.fr
 DESCRIPTION:Séance: S29_6_CINPM_1_2\nEnseignant: Philippe Bonfils\nGroupe
  : Master_CINPM_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO503
+LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (TD) - Master_CINPM_B - Séance:
   S30_6_CINPM_2_1
-DTSTART;TZID=Europe/Paris:20251017T140000
-DTEND;TZID=Europe/Paris:20251017T170000
-UID:S30_6_CINPM_2_1_42_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250910T093000
+DTEND;TZID=Europe/Paris:20250910T123000
+UID:S30_6_CINPM_2_1_37_2@ingemedia.fr
 DESCRIPTION:Séance: S30_6_CINPM_2_1\nEnseignant: Philippe Bonfils\nGroupe
  : Master_CINPM_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO701
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (TD) - Master_CINPM_B - Séance:
   S31_6_CINPM_2_2
-DTSTART;TZID=Europe/Paris:20251127T170000
-DTEND;TZID=Europe/Paris:20251127T200000
-UID:S31_6_CINPM_2_2_48_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251217T133000
+DTEND;TZID=Europe/Paris:20251217T163000
+UID:S31_6_CINPM_2_2_51_2@ingemedia.fr
 DESCRIPTION:Séance: S31_6_CINPM_2_2\nEnseignant: Philippe Bonfils\nGroupe
  : Master_CINPM_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO416
+LOCATION:Salle CO610
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (TD) - Master_CDE_A - Séance: S
  32_6_CDE_1_1
-DTSTART;TZID=Europe/Paris:20251106T100000
-DTEND;TZID=Europe/Paris:20251106T130000
-UID:S32_6_CDE_1_1_45_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250910T133000
+DTEND;TZID=Europe/Paris:20250910T163000
+UID:S32_6_CDE_1_1_37_2@ingemedia.fr
 DESCRIPTION:Séance: S32_6_CDE_1_1\nEnseignant: Philippe Bonfils\nGroupe: 
  Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO416
+LOCATION:Salle CO615
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (TD) - Master_CDE_A - Séance: S
  33_6_CDE_1_2
-DTSTART;TZID=Europe/Paris:20251218T100000
-DTEND;TZID=Europe/Paris:20251218T130000
+DTSTART;TZID=Europe/Paris:20251218T080000
+DTEND;TZID=Europe/Paris:20251218T110000
 UID:S33_6_CDE_1_2_51_3@ingemedia.fr
 DESCRIPTION:Séance: S33_6_CDE_1_2\nEnseignant: Philippe Bonfils\nGroupe: 
  Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO701
+LOCATION:Salle FA001
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (TD) - Master_CDE_B - Séance: S
  34_6_CDE_2_1
-DTSTART;TZID=Europe/Paris:20251106T170000
-DTEND;TZID=Europe/Paris:20251106T200000
-UID:S34_6_CDE_2_1_45_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250912T143000
+DTEND;TZID=Europe/Paris:20250912T173000
+UID:S34_6_CDE_2_1_37_4@ingemedia.fr
 DESCRIPTION:Séance: S34_6_CDE_2_1\nEnseignant: Philippe Bonfils\nGroupe: 
  Master_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO515
+LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Management de projets numériques (TD) - Master_CDE_B - Séance: S
  35_6_CDE_2_2
-DTSTART;TZID=Europe/Paris:20251218T170000
-DTEND;TZID=Europe/Paris:20251218T200000
+DTSTART;TZID=Europe/Paris:20251218T140000
+DTEND;TZID=Europe/Paris:20251218T170000
 UID:S35_6_CDE_2_2_51_3@ingemedia.fr
 DESCRIPTION:Séance: S35_6_CDE_2_2\nEnseignant: Philippe Bonfils\nGroupe: 
  Master_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO503
+LOCATION:Salle CO601
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (CM) - Master_DASI\, Master_CINPM\, M
  aster_CDE - Séance: S36_7_1
-DTSTART;TZID=Europe/Paris:20250912T130000
-DTEND;TZID=Europe/Paris:20250912T153000
-UID:S36_7_1_37_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250919T080000
+DTEND;TZID=Europe/Paris:20250919T103000
+UID:S36_7_1_38_4@ingemedia.fr
 DESCRIPTION:Séance: S36_7_1\nEnseignant: Véronique Ruiz\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -392,9 +392,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (CM) - Master_DASI\, Master_CINPM\, M
  aster_CDE - Séance: S37_7_2
-DTSTART;TZID=Europe/Paris:20250926T080000
-DTEND;TZID=Europe/Paris:20250926T103000
-UID:S37_7_2_39_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250924T130000
+DTEND;TZID=Europe/Paris:20250924T153000
+UID:S37_7_2_39_2@ingemedia.fr
 DESCRIPTION:Séance: S37_7_2\nEnseignant: Véronique Ruiz\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -402,9 +402,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (CM) - Master_DASI\, Master_CINPM\, M
  aster_CDE - Séance: S38_7_3
-DTSTART;TZID=Europe/Paris:20251010T103000
-DTEND;TZID=Europe/Paris:20251010T130000
-UID:S38_7_3_41_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251127T173000
+DTEND;TZID=Europe/Paris:20251127T200000
+UID:S38_7_3_48_3@ingemedia.fr
 DESCRIPTION:Séance: S38_7_3\nEnseignant: Véronique Ruiz\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -412,9 +412,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (CM) - Master_DASI\, Master_CINPM\, M
  aster_CDE - Séance: S39_7_4
-DTSTART;TZID=Europe/Paris:20251219T170000
-DTEND;TZID=Europe/Paris:20251219T193000
-UID:S39_7_4_51_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251128T153000
+DTEND;TZID=Europe/Paris:20251128T180000
+UID:S39_7_4_48_4@ingemedia.fr
 DESCRIPTION:Séance: S39_7_4\nEnseignant: Véronique Ruiz\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -422,9 +422,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_DASI - Séance: S40_8_D
  ASI_1
-DTSTART;TZID=Europe/Paris:20250909T170000
-DTEND;TZID=Europe/Paris:20250909T200000
-UID:S40_8_DASI_1_37_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250915T080000
+DTEND;TZID=Europe/Paris:20250915T110000
+UID:S40_8_DASI_1_38_0@ingemedia.fr
 DESCRIPTION:Séance: S40_8_DASI_1\nEnseignant: Véronique Ruiz\nGroupe: Ma
  ster_DASI\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -432,9 +432,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_DASI - Séance: S41_8_D
  ASI_2
-DTSTART;TZID=Europe/Paris:20251118T170000
-DTEND;TZID=Europe/Paris:20251118T200000
-UID:S41_8_DASI_2_47_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251024T090000
+DTEND;TZID=Europe/Paris:20251024T120000
+UID:S41_8_DASI_2_43_4@ingemedia.fr
 DESCRIPTION:Séance: S41_8_DASI_2\nEnseignant: Véronique Ruiz\nGroupe: Ma
  ster_DASI\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -442,9 +442,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_DASI - Séance: S42_8_D
  ASI_3
-DTSTART;TZID=Europe/Paris:20251124T130000
-DTEND;TZID=Europe/Paris:20251124T160000
-UID:S42_8_DASI_3_48_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251218T130000
+DTEND;TZID=Europe/Paris:20251218T160000
+UID:S42_8_DASI_3_51_3@ingemedia.fr
 DESCRIPTION:Séance: S42_8_DASI_3\nEnseignant: Véronique Ruiz\nGroupe: Ma
  ster_DASI\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -452,9 +452,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CINPM_A - Séance: S43_
  8_CINPM_1_1
-DTSTART;TZID=Europe/Paris:20251024T090000
-DTEND;TZID=Europe/Paris:20251024T120000
-UID:S43_8_CINPM_1_1_43_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250925T100000
+DTEND;TZID=Europe/Paris:20250925T130000
+UID:S43_8_CINPM_1_1_39_3@ingemedia.fr
 DESCRIPTION:Séance: S43_8_CINPM_1_1\nEnseignant: Véronique Ruiz\nGroupe:
   Master_CINPM_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -462,9 +462,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CINPM_A - Séance: S44_
  8_CINPM_1_2
-DTSTART;TZID=Europe/Paris:20251119T170000
-DTEND;TZID=Europe/Paris:20251119T200000
-UID:S44_8_CINPM_1_2_47_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251113T163000
+DTEND;TZID=Europe/Paris:20251113T193000
+UID:S44_8_CINPM_1_2_46_3@ingemedia.fr
 DESCRIPTION:Séance: S44_8_CINPM_1_2\nEnseignant: Véronique Ruiz\nGroupe:
   Master_CINPM_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -472,9 +472,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CINPM_A - Séance: S45_
  8_CINPM_1_3
-DTSTART;TZID=Europe/Paris:20251125T080000
-DTEND;TZID=Europe/Paris:20251125T110000
-UID:S45_8_CINPM_1_3_48_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251218T160000
+DTEND;TZID=Europe/Paris:20251218T190000
+UID:S45_8_CINPM_1_3_51_3@ingemedia.fr
 DESCRIPTION:Séance: S45_8_CINPM_1_3\nEnseignant: Véronique Ruiz\nGroupe:
   Master_CINPM_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -482,9 +482,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CINPM_B - Séance: S46_
  8_CINPM_2_1
-DTSTART;TZID=Europe/Paris:20251024T133000
-DTEND;TZID=Europe/Paris:20251024T163000
-UID:S46_8_CINPM_2_1_43_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251007T143000
+DTEND;TZID=Europe/Paris:20251007T173000
+UID:S46_8_CINPM_2_1_41_1@ingemedia.fr
 DESCRIPTION:Séance: S46_8_CINPM_2_1\nEnseignant: Véronique Ruiz\nGroupe:
   Master_CINPM_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -492,9 +492,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CINPM_B - Séance: S47_
  8_CINPM_2_2
-DTSTART;TZID=Europe/Paris:20251120T170000
-DTEND;TZID=Europe/Paris:20251120T200000
-UID:S47_8_CINPM_2_2_47_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251114T080000
+DTEND;TZID=Europe/Paris:20251114T110000
+UID:S47_8_CINPM_2_2_46_4@ingemedia.fr
 DESCRIPTION:Séance: S47_8_CINPM_2_2\nEnseignant: Véronique Ruiz\nGroupe:
   Master_CINPM_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -502,9 +502,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CINPM_B - Séance: S48_
  8_CINPM_2_3
-DTSTART;TZID=Europe/Paris:20251217T140000
-DTEND;TZID=Europe/Paris:20251217T170000
-UID:S48_8_CINPM_2_3_51_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251219T083000
+DTEND;TZID=Europe/Paris:20251219T113000
+UID:S48_8_CINPM_2_3_51_4@ingemedia.fr
 DESCRIPTION:Séance: S48_8_CINPM_2_3\nEnseignant: Véronique Ruiz\nGroupe:
   Master_CINPM_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -512,9 +512,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CDE_A - Séance: S49_8_
  CDE_1_1
-DTSTART;TZID=Europe/Paris:20251111T100000
-DTEND;TZID=Europe/Paris:20251111T130000
-UID:S49_8_CDE_1_1_46_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251014T093000
+DTEND;TZID=Europe/Paris:20251014T123000
+UID:S49_8_CDE_1_1_42_1@ingemedia.fr
 DESCRIPTION:Séance: S49_8_CDE_1_1\nEnseignant: Véronique Ruiz\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -522,9 +522,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CDE_A - Séance: S50_8_
  CDE_1_2
-DTSTART;TZID=Europe/Paris:20251121T083000
-DTEND;TZID=Europe/Paris:20251121T113000
-UID:S50_8_CDE_1_2_47_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251114T140000
+DTEND;TZID=Europe/Paris:20251114T170000
+UID:S50_8_CDE_1_2_46_4@ingemedia.fr
 DESCRIPTION:Séance: S50_8_CDE_1_2\nEnseignant: Véronique Ruiz\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -532,9 +532,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CDE_A - Séance: S51_8_
  CDE_1_3
-DTSTART;TZID=Europe/Paris:20251217T170000
-DTEND;TZID=Europe/Paris:20251217T200000
-UID:S51_8_CDE_1_3_51_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251219T130000
+DTEND;TZID=Europe/Paris:20251219T160000
+UID:S51_8_CDE_1_3_51_4@ingemedia.fr
 DESCRIPTION:Séance: S51_8_CDE_1_3\nEnseignant: Véronique Ruiz\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -542,9 +542,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CDE_B - Séance: S52_8_
  CDE_2_1
-DTSTART;TZID=Europe/Paris:20251118T100000
-DTEND;TZID=Europe/Paris:20251118T130000
-UID:S52_8_CDE_2_1_47_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251014T150000
+DTEND;TZID=Europe/Paris:20251014T180000
+UID:S52_8_CDE_2_1_42_1@ingemedia.fr
 DESCRIPTION:Séance: S52_8_CDE_2_1\nEnseignant: Véronique Ruiz\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -552,9 +552,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CDE_B - Séance: S53_8_
  CDE_2_2
-DTSTART;TZID=Europe/Paris:20251121T133000
-DTEND;TZID=Europe/Paris:20251121T163000
-UID:S53_8_CDE_2_2_47_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251210T133000
+DTEND;TZID=Europe/Paris:20251210T163000
+UID:S53_8_CDE_2_2_50_2@ingemedia.fr
 DESCRIPTION:Séance: S53_8_CDE_2_2\nEnseignant: Véronique Ruiz\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -562,8 +562,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Stratégies de communication (TD) - Master_CDE_B - Séance: S54_8_
  CDE_2_3
-DTSTART;TZID=Europe/Paris:20251219T100000
-DTEND;TZID=Europe/Paris:20251219T130000
+DTSTART;TZID=Europe/Paris:20251219T170000
+DTEND;TZID=Europe/Paris:20251219T200000
 UID:S54_8_CDE_2_3_51_4@ingemedia.fr
 DESCRIPTION:Séance: S54_8_CDE_2_3\nEnseignant: Véronique Ruiz\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
@@ -572,9 +572,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (CM) - Master_DASI\
  , Master_CINPM\, Master_CDE - Séance: S55_9_1
-DTSTART;TZID=Europe/Paris:20251120T140000
-DTEND;TZID=Europe/Paris:20251120T163000
-UID:S55_9_1_47_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250912T173000
+DTEND;TZID=Europe/Paris:20250912T200000
+UID:S55_9_1_37_4@ingemedia.fr
 DESCRIPTION:Séance: S55_9_1\nEnseignant: Sami Ben Amor\nGroupe: Master_DA
  SI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -582,19 +582,19 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (CM) - Master_DASI\
  , Master_CINPM\, Master_CDE - Séance: S56_9_2
-DTSTART;TZID=Europe/Paris:20251211T153000
-DTEND;TZID=Europe/Paris:20251211T180000
-UID:S56_9_2_50_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251021T170000
+DTEND;TZID=Europe/Paris:20251021T193000
+UID:S56_9_2_43_1@ingemedia.fr
 DESCRIPTION:Séance: S56_9_2\nEnseignant: Sami Ben Amor\nGroupe: Master_DA
  SI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
-LOCATION:Salle AMPHI110
+LOCATION:Salle FA001
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (CM) - Master_DASI\
  , Master_CINPM\, Master_CDE - Séance: S57_9_3
-DTSTART;TZID=Europe/Paris:20251212T083000
-DTEND;TZID=Europe/Paris:20251212T110000
-UID:S57_9_3_50_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251121T173000
+DTEND;TZID=Europe/Paris:20251121T200000
+UID:S57_9_3_47_4@ingemedia.fr
 DESCRIPTION:Séance: S57_9_3\nEnseignant: Sami Ben Amor\nGroupe: Master_DA
  SI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -602,8 +602,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (CM) - Master_DASI\
  , Master_CINPM\, Master_CDE - Séance: S58_9_4
-DTSTART;TZID=Europe/Paris:20251212T130000
-DTEND;TZID=Europe/Paris:20251212T153000
+DTSTART;TZID=Europe/Paris:20251212T173000
+DTEND;TZID=Europe/Paris:20251212T200000
 UID:S58_9_4_50_4@ingemedia.fr
 DESCRIPTION:Séance: S58_9_4\nEnseignant: Sami Ben Amor\nGroupe: Master_DA
  SI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
@@ -612,9 +612,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (TD) - Master_DASI 
  - Séance: S59_10_DASI_1
-DTSTART;TZID=Europe/Paris:20250911T090000
-DTEND;TZID=Europe/Paris:20250911T120000
-UID:S59_10_DASI_1_37_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250909T080000
+DTEND;TZID=Europe/Paris:20250909T110000
+UID:S59_10_DASI_1_37_1@ingemedia.fr
 DESCRIPTION:Séance: S59_10_DASI_1\nEnseignant: Sami Ben Amor\nGroupe: Mas
  ter_DASI\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -622,9 +622,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (TD) - Master_DASI 
  - Séance: S60_10_DASI_2
-DTSTART;TZID=Europe/Paris:20251209T130000
-DTEND;TZID=Europe/Paris:20251209T160000
-UID:S60_10_DASI_2_50_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251009T080000
+DTEND;TZID=Europe/Paris:20251009T110000
+UID:S60_10_DASI_2_41_3@ingemedia.fr
 DESCRIPTION:Séance: S60_10_DASI_2\nEnseignant: Sami Ben Amor\nGroupe: Mas
  ter_DASI\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -632,9 +632,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (TD) - Master_CINPM
  _A - Séance: S61_10_CINPM_1_1
-DTSTART;TZID=Europe/Paris:20250911T130000
-DTEND;TZID=Europe/Paris:20250911T160000
-UID:S61_10_CINPM_1_1_37_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251006T083000
+DTEND;TZID=Europe/Paris:20251006T113000
+UID:S61_10_CINPM_1_1_41_0@ingemedia.fr
 DESCRIPTION:Séance: S61_10_CINPM_1_1\nEnseignant: Sami Ben Amor\nGroupe: 
  Master_CINPM_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -642,9 +642,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (TD) - Master_CINPM
  _A - Séance: S62_10_CINPM_1_2
-DTSTART;TZID=Europe/Paris:20251209T170000
-DTEND;TZID=Europe/Paris:20251209T200000
-UID:S62_10_CINPM_1_2_50_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251125T143000
+DTEND;TZID=Europe/Paris:20251125T173000
+UID:S62_10_CINPM_1_2_48_1@ingemedia.fr
 DESCRIPTION:Séance: S62_10_CINPM_1_2\nEnseignant: Sami Ben Amor\nGroupe: 
  Master_CINPM_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -652,9 +652,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (TD) - Master_CINPM
  _B - Séance: S63_10_CINPM_2_1
-DTSTART;TZID=Europe/Paris:20250911T163000
-DTEND;TZID=Europe/Paris:20250911T193000
-UID:S63_10_CINPM_2_1_37_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251006T130000
+DTEND;TZID=Europe/Paris:20251006T160000
+UID:S63_10_CINPM_2_1_41_0@ingemedia.fr
 DESCRIPTION:Séance: S63_10_CINPM_2_1\nEnseignant: Sami Ben Amor\nGroupe: 
  Master_CINPM_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -662,9 +662,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (TD) - Master_CINPM
  _B - Séance: S64_10_CINPM_2_2
-DTSTART;TZID=Europe/Paris:20251211T100000
-DTEND;TZID=Europe/Paris:20251211T130000
-UID:S64_10_CINPM_2_2_50_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251127T100000
+DTEND;TZID=Europe/Paris:20251127T130000
+UID:S64_10_CINPM_2_2_48_3@ingemedia.fr
 DESCRIPTION:Séance: S64_10_CINPM_2_2\nEnseignant: Sami Ben Amor\nGroupe: 
  Master_CINPM_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -672,9 +672,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (TD) - Master_CDE_A
   - Séance: S65_10_CDE_1_1
-DTSTART;TZID=Europe/Paris:20250925T140000
-DTEND;TZID=Europe/Paris:20250925T170000
-UID:S65_10_CDE_1_1_39_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251006T170000
+DTEND;TZID=Europe/Paris:20251006T200000
+UID:S65_10_CDE_1_1_41_0@ingemedia.fr
 DESCRIPTION:Séance: S65_10_CDE_1_1\nEnseignant: Sami Ben Amor\nGroupe: Ma
  ster_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -682,9 +682,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (TD) - Master_CDE_A
   - Séance: S66_10_CDE_1_2
-DTSTART;TZID=Europe/Paris:20251218T170000
-DTEND;TZID=Europe/Paris:20251218T200000
-UID:S66_10_CDE_1_2_51_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251211T080000
+DTEND;TZID=Europe/Paris:20251211T110000
+UID:S66_10_CDE_1_2_50_3@ingemedia.fr
 DESCRIPTION:Séance: S66_10_CDE_1_2\nEnseignant: Sami Ben Amor\nGroupe: Ma
  ster_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -692,9 +692,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (TD) - Master_CDE_B
   - Séance: S67_10_CDE_2_1
-DTSTART;TZID=Europe/Paris:20251208T083000
-DTEND;TZID=Europe/Paris:20251208T113000
-UID:S67_10_CDE_2_1_50_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251007T100000
+DTEND;TZID=Europe/Paris:20251007T130000
+UID:S67_10_CDE_2_1_41_1@ingemedia.fr
 DESCRIPTION:Séance: S67_10_CDE_2_1\nEnseignant: Sami Ben Amor\nGroupe: Ma
  ster_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -702,9 +702,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Littératie et visualisation des données (IA) (TD) - Master_CDE_B
   - Séance: S68_10_CDE_2_2
-DTSTART;TZID=Europe/Paris:20251219T140000
-DTEND;TZID=Europe/Paris:20251219T170000
-UID:S68_10_CDE_2_2_51_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251211T130000
+DTEND;TZID=Europe/Paris:20251211T160000
+UID:S68_10_CDE_2_2_50_3@ingemedia.fr
 DESCRIPTION:Séance: S68_10_CDE_2_2\nEnseignant: Sami Ben Amor\nGroupe: Ma
  ster_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -712,19 +712,19 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication environnementale (CM) - Master_DASI\, Master_CINPM\,
   Master_CDE - Séance: S69_11_1
-DTSTART;TZID=Europe/Paris:20251016T100000
-DTEND;TZID=Europe/Paris:20251016T123000
-UID:S69_11_1_42_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251021T093000
+DTEND;TZID=Europe/Paris:20251021T120000
+UID:S69_11_1_43_1@ingemedia.fr
 DESCRIPTION:Séance: S69_11_1\nEnseignant: Anne Gagnebien\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
-LOCATION:Salle FA001
+LOCATION:Salle AMPHI110
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication environnementale (CM) - Master_DASI\, Master_CINPM\,
   Master_CDE - Séance: S70_11_2
-DTSTART;TZID=Europe/Paris:20251110T133000
-DTEND;TZID=Europe/Paris:20251110T160000
-UID:S70_11_2_46_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251209T140000
+DTEND;TZID=Europe/Paris:20251209T163000
+UID:S70_11_2_50_1@ingemedia.fr
 DESCRIPTION:Séance: S70_11_2\nEnseignant: Anne Gagnebien\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -732,19 +732,19 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication environnementale (CM) - Master_DASI\, Master_CINPM\,
   Master_CDE - Séance: S71_11_3
-DTSTART;TZID=Europe/Paris:20251208T150000
-DTEND;TZID=Europe/Paris:20251208T173000
-UID:S71_11_3_50_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251215T150000
+DTEND;TZID=Europe/Paris:20251215T173000
+UID:S71_11_3_51_0@ingemedia.fr
 DESCRIPTION:Séance: S71_11_3\nEnseignant: Anne Gagnebien\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
-LOCATION:Salle AMPHI110
+LOCATION:Salle FA001
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication environnementale (CM) - Master_DASI\, Master_CINPM\,
   Master_CDE - Séance: S72_11_4
-DTSTART;TZID=Europe/Paris:20251211T130000
-DTEND;TZID=Europe/Paris:20251211T153000
-UID:S72_11_4_50_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251215T173000
+DTEND;TZID=Europe/Paris:20251215T200000
+UID:S72_11_4_51_0@ingemedia.fr
 DESCRIPTION:Séance: S72_11_4\nEnseignant: Anne Gagnebien\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -752,29 +752,29 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Médias et numériques (CM) - Master_DASI\, Master_CINPM\, Master_
  CDE - Séance: S73_12_1
-DTSTART;TZID=Europe/Paris:20250923T140000
-DTEND;TZID=Europe/Paris:20250923T163000
-UID:S73_12_1_39_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250910T163000
+DTEND;TZID=Europe/Paris:20250910T190000
+UID:S73_12_1_37_2@ingemedia.fr
 DESCRIPTION:Séance: S73_12_1\nEnseignant: Billel Aroufoune\nGroupe: Maste
- r_DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
-LOCATION:Salle FA001
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Médias et numériques (CM) - Master_DASI\, Master_CINPM\, Master_
- CDE - Séance: S74_12_2
-DTSTART;TZID=Europe/Paris:20251103T150000
-DTEND;TZID=Europe/Paris:20251103T173000
-UID:S74_12_2_45_0@ingemedia.fr
-DESCRIPTION:Séance: S74_12_2\nEnseignant: Billel Aroufoune\nGroupe: Maste
  r_DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Médias et numériques (CM) - Master_DASI\, Master_CINPM\, Master_
+ CDE - Séance: S74_12_2
+DTSTART;TZID=Europe/Paris:20250916T140000
+DTEND;TZID=Europe/Paris:20250916T163000
+UID:S74_12_2_38_1@ingemedia.fr
+DESCRIPTION:Séance: S74_12_2\nEnseignant: Billel Aroufoune\nGroupe: Maste
+ r_DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
+LOCATION:Salle FA001
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Médias et numériques (CM) - Master_DASI\, Master_CINPM\, Master_
  CDE - Séance: S75_12_3
-DTSTART;TZID=Europe/Paris:20251107T170000
-DTEND;TZID=Europe/Paris:20251107T193000
-UID:S75_12_3_45_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250918T133000
+DTEND;TZID=Europe/Paris:20250918T160000
+UID:S75_12_3_38_3@ingemedia.fr
 DESCRIPTION:Séance: S75_12_3\nEnseignant: Billel Aroufoune\nGroupe: Maste
  r_DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -782,9 +782,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Médias et numériques (CM) - Master_DASI\, Master_CINPM\, Master_
  CDE - Séance: S76_12_4
-DTSTART;TZID=Europe/Paris:20251126T140000
-DTEND;TZID=Europe/Paris:20251126T163000
-UID:S76_12_4_48_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250918T160000
+DTEND;TZID=Europe/Paris:20250918T183000
+UID:S76_12_4_38_3@ingemedia.fr
 DESCRIPTION:Séance: S76_12_4\nEnseignant: Billel Aroufoune\nGroupe: Maste
  r_DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -792,19 +792,19 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Environnement juridique (CM) - Master_DASI\, Master_CINPM\, Master
  _CDE - Séance: S77_13_1
-DTSTART;TZID=Europe/Paris:20250919T080000
-DTEND;TZID=Europe/Paris:20250919T103000
-UID:S77_13_1_38_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250923T163000
+DTEND;TZID=Europe/Paris:20250923T190000
+UID:S77_13_1_39_1@ingemedia.fr
 DESCRIPTION:Séance: S77_13_1\nEnseignant: Sophie Monteil\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
-LOCATION:Salle AMPHI110
+LOCATION:Salle FA001
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Environnement juridique (CM) - Master_DASI\, Master_CINPM\, Master
  _CDE - Séance: S78_13_2
-DTSTART;TZID=Europe/Paris:20250919T130000
-DTEND;TZID=Europe/Paris:20250919T153000
-UID:S78_13_2_38_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250924T170000
+DTEND;TZID=Europe/Paris:20250924T193000
+UID:S78_13_2_39_2@ingemedia.fr
 DESCRIPTION:Séance: S78_13_2\nEnseignant: Sophie Monteil\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -812,9 +812,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Environnement juridique (CM) - Master_DASI\, Master_CINPM\, Master
  _CDE - Séance: S79_13_3
-DTSTART;TZID=Europe/Paris:20251014T100000
-DTEND;TZID=Europe/Paris:20251014T123000
-UID:S79_13_3_42_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251208T173000
+DTEND;TZID=Europe/Paris:20251208T200000
+UID:S79_13_3_50_0@ingemedia.fr
 DESCRIPTION:Séance: S79_13_3\nEnseignant: Sophie Monteil\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -822,127 +822,127 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Environnement juridique (CM) - Master_DASI\, Master_CINPM\, Master
  _CDE - Séance: S80_13_4
-DTSTART;TZID=Europe/Paris:20251127T140000
-DTEND;TZID=Europe/Paris:20251127T163000
-UID:S80_13_4_48_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251211T173000
+DTEND;TZID=Europe/Paris:20251211T200000
+UID:S80_13_4_50_3@ingemedia.fr
 DESCRIPTION:Séance: S80_13_4\nEnseignant: Sophie Monteil\nGroupe: Master_
  DASI\, Master_CINPM\, Master_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_A - Séance: S81_14_CDE_1_1
-DTSTART;TZID=Europe/Paris:20250909T130000
-DTEND;TZID=Europe/Paris:20250909T160000
-UID:S81_14_CDE_1_1_37_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251210T170000
+DTEND;TZID=Europe/Paris:20251210T200000
+UID:S81_14_CDE_1_1_50_2@ingemedia.fr
 DESCRIPTION:Séance: S81_14_CDE_1_1\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle FA001
+LOCATION:Salle CO315
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_A - Séance: S82_14_CDE_1_2
-DTSTART;TZID=Europe/Paris:20250910T083000
-DTEND;TZID=Europe/Paris:20250910T113000
-UID:S82_14_CDE_1_2_37_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251212T140000
+DTEND;TZID=Europe/Paris:20251212T170000
+UID:S82_14_CDE_1_2_50_4@ingemedia.fr
 DESCRIPTION:Séance: S82_14_CDE_1_2\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO701
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_A - Séance: S83_14_CDE_1_3
-DTSTART;TZID=Europe/Paris:20250910T163000
-DTEND;TZID=Europe/Paris:20250910T193000
-UID:S83_14_CDE_1_3_37_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251216T080000
+DTEND;TZID=Europe/Paris:20251216T110000
+UID:S83_14_CDE_1_3_51_1@ingemedia.fr
 DESCRIPTION:Séance: S83_14_CDE_1_3\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO503
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_A - Séance: S84_14_CDE_1_4
-DTSTART;TZID=Europe/Paris:20250911T160000
-DTEND;TZID=Europe/Paris:20250911T190000
-UID:S84_14_CDE_1_4_37_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251216T170000
+DTEND;TZID=Europe/Paris:20251216T200000
+UID:S84_14_CDE_1_4_51_1@ingemedia.fr
 DESCRIPTION:Séance: S84_14_CDE_1_4\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO315
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_A - Séance: S85_14_CDE_1_5
-DTSTART;TZID=Europe/Paris:20250917T160000
-DTEND;TZID=Europe/Paris:20250917T190000
-UID:S85_14_CDE_1_5_38_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251217T153000
+DTEND;TZID=Europe/Paris:20251217T183000
+UID:S85_14_CDE_1_5_51_2@ingemedia.fr
 DESCRIPTION:Séance: S85_14_CDE_1_5\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO601
+LOCATION:Salle CO315
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_A - Séance: S86_14_CDE_1_6
-DTSTART;TZID=Europe/Paris:20251128T133000
-DTEND;TZID=Europe/Paris:20251128T163000
-UID:S86_14_CDE_1_6_48_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251218T143000
+DTEND;TZID=Europe/Paris:20251218T173000
+UID:S86_14_CDE_1_6_51_3@ingemedia.fr
 DESCRIPTION:Séance: S86_14_CDE_1_6\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO515
+LOCATION:Salle CO315
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_B - Séance: S87_14_CDE_2_1
-DTSTART;TZID=Europe/Paris:20250909T170000
-DTEND;TZID=Europe/Paris:20250909T200000
-UID:S87_14_CDE_2_1_37_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251212T100000
+DTEND;TZID=Europe/Paris:20251212T130000
+UID:S87_14_CDE_2_1_50_4@ingemedia.fr
 DESCRIPTION:Séance: S87_14_CDE_2_1\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO601
+LOCATION:Salle CO315
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_B - Séance: S88_14_CDE_2_2
-DTSTART;TZID=Europe/Paris:20250910T133000
-DTEND;TZID=Europe/Paris:20250910T163000
-UID:S88_14_CDE_2_2_37_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251215T083000
+DTEND;TZID=Europe/Paris:20251215T113000
+UID:S88_14_CDE_2_2_51_0@ingemedia.fr
 DESCRIPTION:Séance: S88_14_CDE_2_2\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_B - Séance: S89_14_CDE_2_3
-DTSTART;TZID=Europe/Paris:20250911T100000
-DTEND;TZID=Europe/Paris:20250911T130000
-UID:S89_14_CDE_2_3_37_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251216T140000
+DTEND;TZID=Europe/Paris:20251216T170000
+UID:S89_14_CDE_2_3_51_1@ingemedia.fr
 DESCRIPTION:Séance: S89_14_CDE_2_3\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO701
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_B - Séance: S90_14_CDE_2_4
-DTSTART;TZID=Europe/Paris:20250917T100000
-DTEND;TZID=Europe/Paris:20250917T130000
-UID:S90_14_CDE_2_4_38_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251217T090000
+DTEND;TZID=Europe/Paris:20251217T120000
+UID:S90_14_CDE_2_4_51_2@ingemedia.fr
 DESCRIPTION:Séance: S90_14_CDE_2_4\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO503
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_B - Séance: S91_14_CDE_2_5
-DTSTART;TZID=Europe/Paris:20251106T140000
-DTEND;TZID=Europe/Paris:20251106T170000
-UID:S91_14_CDE_2_5_45_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251218T080000
+DTEND;TZID=Europe/Paris:20251218T110000
+UID:S91_14_CDE_2_5_51_3@ingemedia.fr
 DESCRIPTION:Séance: S91_14_CDE_2_5\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle AMPHI110
+LOCATION:Salle CO604
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Anglais (TD) - Master_CDE_B - Séance: S92_14_CDE_2_6
-DTSTART;TZID=Europe/Paris:20251209T160000
-DTEND;TZID=Europe/Paris:20251209T190000
-UID:S92_14_CDE_2_6_50_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251219T100000
+DTEND;TZID=Europe/Paris:20251219T130000
+UID:S92_14_CDE_2_6_51_4@ingemedia.fr
 DESCRIPTION:Séance: S92_14_CDE_2_6\nEnseignant: Julien Chevron\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle AMPHI110
+LOCATION:Salle CO701
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Production de contenus vidéos (TD) - Master_CDE_A - Séance: S93_
  15_CDE_1_1
-DTSTART;TZID=Europe/Paris:20250911T080000
-DTEND;TZID=Europe/Paris:20250911T110000
-UID:S93_15_CDE_1_1_37_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250909T140000
+DTEND;TZID=Europe/Paris:20250909T170000
+UID:S93_15_CDE_1_1_37_1@ingemedia.fr
 DESCRIPTION:Séance: S93_15_CDE_1_1\nEnseignant: Nathalie Trezza\nGroupe: 
  Master_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO610
@@ -950,9 +950,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Production de contenus vidéos (TD) - Master_CDE_A - Séance: S94_
  15_CDE_1_2
-DTSTART;TZID=Europe/Paris:20250912T080000
-DTEND;TZID=Europe/Paris:20250912T110000
-UID:S94_15_CDE_1_2_37_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250910T093000
+DTEND;TZID=Europe/Paris:20250910T123000
+UID:S94_15_CDE_1_2_37_2@ingemedia.fr
 DESCRIPTION:Séance: S94_15_CDE_1_2\nEnseignant: Nathalie Trezza\nGroupe: 
  Master_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO610
@@ -960,9 +960,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Production de contenus vidéos (TD) - Master_CDE_A - Séance: S95_
  15_CDE_1_3
-DTSTART;TZID=Europe/Paris:20250925T170000
-DTEND;TZID=Europe/Paris:20250925T200000
-UID:S95_15_CDE_1_3_39_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250912T093000
+DTEND;TZID=Europe/Paris:20250912T123000
+UID:S95_15_CDE_1_3_37_4@ingemedia.fr
 DESCRIPTION:Séance: S95_15_CDE_1_3\nEnseignant: Nathalie Trezza\nGroupe: 
  Master_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO610
@@ -970,9 +970,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Production de contenus vidéos (TD) - Master_CDE_A - Séance: S96_
  15_CDE_1_4
-DTSTART;TZID=Europe/Paris:20251105T080000
-DTEND;TZID=Europe/Paris:20251105T110000
-UID:S96_15_CDE_1_4_45_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250916T100000
+DTEND;TZID=Europe/Paris:20250916T130000
+UID:S96_15_CDE_1_4_38_1@ingemedia.fr
 DESCRIPTION:Séance: S96_15_CDE_1_4\nEnseignant: Nathalie Trezza\nGroupe: 
  Master_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO610
@@ -980,9 +980,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Production de contenus vidéos (TD) - Master_CDE_A - Séance: S97_
  15_CDE_1_5
-DTSTART;TZID=Europe/Paris:20251209T130000
-DTEND;TZID=Europe/Paris:20251209T150000
-UID:S97_15_CDE_1_5_50_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251218T180000
+DTEND;TZID=Europe/Paris:20251218T200000
+UID:S97_15_CDE_1_5_51_3@ingemedia.fr
 DESCRIPTION:Séance: S97_15_CDE_1_5\nEnseignant: Nathalie Trezza\nGroupe: 
  Master_CDE_A\nType: TD\nDurée: 120 minutes
 LOCATION:Salle CO610
@@ -990,9 +990,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Production de contenus vidéos (TD) - Master_CDE_B - Séance: S98_
  15_CDE_2_1
-DTSTART;TZID=Europe/Paris:20250911T140000
-DTEND;TZID=Europe/Paris:20250911T170000
-UID:S98_15_CDE_2_1_37_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250909T170000
+DTEND;TZID=Europe/Paris:20250909T200000
+UID:S98_15_CDE_2_1_37_1@ingemedia.fr
 DESCRIPTION:Séance: S98_15_CDE_2_1\nEnseignant: Nathalie Trezza\nGroupe: 
  Master_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO610
@@ -1000,9 +1000,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Production de contenus vidéos (TD) - Master_CDE_B - Séance: S99_
  15_CDE_2_2
-DTSTART;TZID=Europe/Paris:20250918T160000
-DTEND;TZID=Europe/Paris:20250918T190000
-UID:S99_15_CDE_2_2_38_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250910T133000
+DTEND;TZID=Europe/Paris:20250910T163000
+UID:S99_15_CDE_2_2_37_2@ingemedia.fr
 DESCRIPTION:Séance: S99_15_CDE_2_2\nEnseignant: Nathalie Trezza\nGroupe: 
  Master_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO610
@@ -1010,9 +1010,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Production de contenus vidéos (TD) - Master_CDE_B - Séance: S100
  _15_CDE_2_3
-DTSTART;TZID=Europe/Paris:20251104T143000
-DTEND;TZID=Europe/Paris:20251104T173000
-UID:S100_15_CDE_2_3_45_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250915T100000
+DTEND;TZID=Europe/Paris:20250915T130000
+UID:S100_15_CDE_2_3_38_0@ingemedia.fr
 DESCRIPTION:Séance: S100_15_CDE_2_3\nEnseignant: Nathalie Trezza\nGroupe:
   Master_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO610
@@ -1020,9 +1020,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Production de contenus vidéos (TD) - Master_CDE_B - Séance: S101
  _15_CDE_2_4
-DTSTART;TZID=Europe/Paris:20251209T090000
-DTEND;TZID=Europe/Paris:20251209T120000
-UID:S101_15_CDE_2_4_50_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250916T170000
+DTEND;TZID=Europe/Paris:20250916T200000
+UID:S101_15_CDE_2_4_38_1@ingemedia.fr
 DESCRIPTION:Séance: S101_15_CDE_2_4\nEnseignant: Nathalie Trezza\nGroupe:
   Master_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO610
@@ -1030,9 +1030,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Production de contenus vidéos (TD) - Master_CDE_B - Séance: S102
  _15_CDE_2_5
-DTSTART;TZID=Europe/Paris:20251210T103000
-DTEND;TZID=Europe/Paris:20251210T123000
-UID:S102_15_CDE_2_5_50_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251219T080000
+DTEND;TZID=Europe/Paris:20251219T100000
+UID:S102_15_CDE_2_5_51_4@ingemedia.fr
 DESCRIPTION:Séance: S102_15_CDE_2_5\nEnseignant: Nathalie Trezza\nGroupe:
   Master_CDE_B\nType: TD\nDurée: 120 minutes
 LOCATION:Salle CO610
@@ -1045,47 +1045,47 @@ DTEND;TZID=Europe/Paris:20250909T200000
 UID:S103_16_CDE_1_1_37_1@ingemedia.fr
 DESCRIPTION:Séance: S103_16_CDE_1_1\nEnseignant: David Galli\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO315
+LOCATION:Salle CO503
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contenus pour réseaux sociaux numériques (TD) - Master_CDE_A - S
  éance: S104_16_CDE_1_2
-DTSTART;TZID=Europe/Paris:20250910T133000
-DTEND;TZID=Europe/Paris:20250910T163000
-UID:S104_16_CDE_1_2_37_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250911T090000
+DTEND;TZID=Europe/Paris:20250911T120000
+UID:S104_16_CDE_1_2_37_3@ingemedia.fr
 DESCRIPTION:Séance: S104_16_CDE_1_2\nEnseignant: David Galli\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO515
+LOCATION:Salle CO315
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contenus pour réseaux sociaux numériques (TD) - Master_CDE_A - S
  éance: S105_16_CDE_1_3
-DTSTART;TZID=Europe/Paris:20251125T170000
-DTEND;TZID=Europe/Paris:20251125T200000
-UID:S105_16_CDE_1_3_48_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250915T100000
+DTEND;TZID=Europe/Paris:20250915T130000
+UID:S105_16_CDE_1_3_38_0@ingemedia.fr
 DESCRIPTION:Séance: S105_16_CDE_1_3\nEnseignant: David Galli\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO515
+LOCATION:Salle CO601
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contenus pour réseaux sociaux numériques (TD) - Master_CDE_A - S
  éance: S106_16_CDE_1_4
-DTSTART;TZID=Europe/Paris:20251127T163000
-DTEND;TZID=Europe/Paris:20251127T193000
-UID:S106_16_CDE_1_4_48_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250917T130000
+DTEND;TZID=Europe/Paris:20250917T160000
+UID:S106_16_CDE_1_4_38_2@ingemedia.fr
 DESCRIPTION:Séance: S106_16_CDE_1_4\nEnseignant: David Galli\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO515
+LOCATION:Salle CO315
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contenus pour réseaux sociaux numériques (TD) - Master_CDE_A - S
  éance: S107_16_CDE_1_5
-DTSTART;TZID=Europe/Paris:20251210T103000
-DTEND;TZID=Europe/Paris:20251210T123000
-UID:S107_16_CDE_1_5_50_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251218T110000
+DTEND;TZID=Europe/Paris:20251218T130000
+UID:S107_16_CDE_1_5_51_3@ingemedia.fr
 DESCRIPTION:Séance: S107_16_CDE_1_5\nEnseignant: David Galli\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 120 minutes
-LOCATION:Salle CO315
+LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contenus pour réseaux sociaux numériques (TD) - Master_CDE_B - S
@@ -1095,54 +1095,54 @@ DTEND;TZID=Europe/Paris:20250910T120000
 UID:S108_16_CDE_2_1_37_2@ingemedia.fr
 DESCRIPTION:Séance: S108_16_CDE_2_1\nEnseignant: David Galli\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO510
+LOCATION:Salle CO604
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contenus pour réseaux sociaux numériques (TD) - Master_CDE_B - S
  éance: S109_16_CDE_2_2
-DTSTART;TZID=Europe/Paris:20251006T100000
-DTEND;TZID=Europe/Paris:20251006T130000
-UID:S109_16_CDE_2_2_41_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250912T093000
+DTEND;TZID=Europe/Paris:20250912T123000
+UID:S109_16_CDE_2_2_37_4@ingemedia.fr
 DESCRIPTION:Séance: S109_16_CDE_2_2\nEnseignant: David Galli\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO515
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contenus pour réseaux sociaux numériques (TD) - Master_CDE_B - S
  éance: S110_16_CDE_2_3
-DTSTART;TZID=Europe/Paris:20251126T163000
-DTEND;TZID=Europe/Paris:20251126T193000
-UID:S110_16_CDE_2_3_48_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250916T080000
+DTEND;TZID=Europe/Paris:20250916T110000
+UID:S110_16_CDE_2_3_38_1@ingemedia.fr
 DESCRIPTION:Séance: S110_16_CDE_2_3\nEnseignant: David Galli\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO315
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contenus pour réseaux sociaux numériques (TD) - Master_CDE_B - S
  éance: S111_16_CDE_2_4
-DTSTART;TZID=Europe/Paris:20251128T153000
-DTEND;TZID=Europe/Paris:20251128T183000
-UID:S111_16_CDE_2_4_48_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250917T170000
+DTEND;TZID=Europe/Paris:20250917T200000
+UID:S111_16_CDE_2_4_38_2@ingemedia.fr
 DESCRIPTION:Séance: S111_16_CDE_2_4\nEnseignant: David Galli\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO416
+LOCATION:Salle CO510
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Contenus pour réseaux sociaux numériques (TD) - Master_CDE_B - S
  éance: S112_16_CDE_2_5
-DTSTART;TZID=Europe/Paris:20251210T133000
-DTEND;TZID=Europe/Paris:20251210T153000
-UID:S112_16_CDE_2_5_50_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251218T170000
+DTEND;TZID=Europe/Paris:20251218T190000
+UID:S112_16_CDE_2_5_51_3@ingemedia.fr
 DESCRIPTION:Séance: S112_16_CDE_2_5\nEnseignant: David Galli\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 120 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO510
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (CM) - Master_CDE - Séance:
   S113_17_1
-DTSTART;TZID=Europe/Paris:20251010T170000
-DTEND;TZID=Europe/Paris:20251010T193000
-UID:S113_17_1_41_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250919T103000
+DTEND;TZID=Europe/Paris:20250919T130000
+UID:S113_17_1_38_4@ingemedia.fr
 DESCRIPTION:Séance: S113_17_1\nEnseignant: Billel Aroufoune\nGroupe: Mast
  er_CDE\nType: CM\nDurée: 150 minutes
 LOCATION:Salle AMPHI110
@@ -1150,29 +1150,29 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (CM) - Master_CDE - Séance:
   S114_17_2
-DTSTART;TZID=Europe/Paris:20251013T100000
-DTEND;TZID=Europe/Paris:20251013T123000
-UID:S114_17_2_42_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251022T133000
+DTEND;TZID=Europe/Paris:20251022T160000
+UID:S114_17_2_43_2@ingemedia.fr
 DESCRIPTION:Séance: S114_17_2\nEnseignant: Billel Aroufoune\nGroupe: Mast
  er_CDE\nType: CM\nDurée: 150 minutes
-LOCATION:Salle CO315
+LOCATION:Salle CO701
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (CM) - Master_CDE - Séance:
   S115_17_3
-DTSTART;TZID=Europe/Paris:20251107T130000
-DTEND;TZID=Europe/Paris:20251107T150000
-UID:S115_17_3_45_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251110T130000
+DTEND;TZID=Europe/Paris:20251110T150000
+UID:S115_17_3_46_0@ingemedia.fr
 DESCRIPTION:Séance: S115_17_3\nEnseignant: Billel Aroufoune\nGroupe: Mast
  er_CDE\nType: CM\nDurée: 120 minutes
-LOCATION:Salle CO315
+LOCATION:Salle FA001
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (TD) - Master_CDE_A - Séanc
  e: S116_18_CDE_1_1
-DTSTART;TZID=Europe/Paris:20250909T080000
-DTEND;TZID=Europe/Paris:20250909T110000
-UID:S116_18_CDE_1_1_37_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251010T170000
+DTEND;TZID=Europe/Paris:20251010T200000
+UID:S116_18_CDE_1_1_41_4@ingemedia.fr
 DESCRIPTION:Séance: S116_18_CDE_1_1\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1180,9 +1180,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (TD) - Master_CDE_A - Séanc
  e: S117_18_CDE_1_2
-DTSTART;TZID=Europe/Paris:20250916T133000
-DTEND;TZID=Europe/Paris:20250916T163000
-UID:S117_18_CDE_1_2_38_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251022T090000
+DTEND;TZID=Europe/Paris:20251022T120000
+UID:S117_18_CDE_1_2_43_2@ingemedia.fr
 DESCRIPTION:Séance: S117_18_CDE_1_2\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1190,9 +1190,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (TD) - Master_CDE_A - Séanc
  e: S118_18_CDE_1_3
-DTSTART;TZID=Europe/Paris:20250917T130000
-DTEND;TZID=Europe/Paris:20250917T160000
-UID:S118_18_CDE_1_3_38_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251023T140000
+DTEND;TZID=Europe/Paris:20251023T170000
+UID:S118_18_CDE_1_3_43_3@ingemedia.fr
 DESCRIPTION:Séance: S118_18_CDE_1_3\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1200,9 +1200,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (TD) - Master_CDE_A - Séanc
  e: S119_18_CDE_1_4
-DTSTART;TZID=Europe/Paris:20250918T130000
-DTEND;TZID=Europe/Paris:20250918T160000
-UID:S119_18_CDE_1_4_38_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251117T100000
+DTEND;TZID=Europe/Paris:20251117T130000
+UID:S119_18_CDE_1_4_47_0@ingemedia.fr
 DESCRIPTION:Séance: S119_18_CDE_1_4\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1210,9 +1210,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (TD) - Master_CDE_A - Séanc
  e: S120_18_CDE_1_5
-DTSTART;TZID=Europe/Paris:20251021T080000
-DTEND;TZID=Europe/Paris:20251021T100000
-UID:S120_18_CDE_1_5_43_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251119T093000
+DTEND;TZID=Europe/Paris:20251119T113000
+UID:S120_18_CDE_1_5_47_2@ingemedia.fr
 DESCRIPTION:Séance: S120_18_CDE_1_5\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 120 minutes
 LOCATION:Salle CO416
@@ -1220,9 +1220,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (TD) - Master_CDE_B - Séanc
  e: S121_18_CDE_2_1
-DTSTART;TZID=Europe/Paris:20250909T130000
-DTEND;TZID=Europe/Paris:20250909T160000
-UID:S121_18_CDE_2_1_37_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251015T093000
+DTEND;TZID=Europe/Paris:20251015T123000
+UID:S121_18_CDE_2_1_42_2@ingemedia.fr
 DESCRIPTION:Séance: S121_18_CDE_2_1\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1230,9 +1230,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (TD) - Master_CDE_B - Séanc
  e: S122_18_CDE_2_2
-DTSTART;TZID=Europe/Paris:20250916T170000
-DTEND;TZID=Europe/Paris:20250916T200000
-UID:S122_18_CDE_2_2_38_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251022T160000
+DTEND;TZID=Europe/Paris:20251022T190000
+UID:S122_18_CDE_2_2_43_2@ingemedia.fr
 DESCRIPTION:Séance: S122_18_CDE_2_2\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1240,9 +1240,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (TD) - Master_CDE_B - Séanc
  e: S123_18_CDE_2_3
-DTSTART;TZID=Europe/Paris:20250918T090000
-DTEND;TZID=Europe/Paris:20250918T120000
-UID:S123_18_CDE_2_3_38_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251107T153000
+DTEND;TZID=Europe/Paris:20251107T183000
+UID:S123_18_CDE_2_3_45_4@ingemedia.fr
 DESCRIPTION:Séance: S123_18_CDE_2_3\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1250,9 +1250,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (TD) - Master_CDE_B - Séanc
  e: S124_18_CDE_2_4
-DTSTART;TZID=Europe/Paris:20251020T140000
-DTEND;TZID=Europe/Paris:20251020T170000
-UID:S124_18_CDE_2_4_43_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251117T150000
+DTEND;TZID=Europe/Paris:20251117T180000
+UID:S124_18_CDE_2_4_47_0@ingemedia.fr
 DESCRIPTION:Séance: S124_18_CDE_2_4\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1260,9 +1260,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication digitale et éditoriale (TD) - Master_CDE_B - Séanc
  e: S125_18_CDE_2_5
-DTSTART;TZID=Europe/Paris:20251021T100000
-DTEND;TZID=Europe/Paris:20251021T120000
-UID:S125_18_CDE_2_5_43_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251217T180000
+DTEND;TZID=Europe/Paris:20251217T200000
+UID:S125_18_CDE_2_5_51_2@ingemedia.fr
 DESCRIPTION:Séance: S125_18_CDE_2_5\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 120 minutes
 LOCATION:Salle CO416
@@ -1270,8 +1270,8 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_A - Séance: S
  126_19_CDE_1_1
-DTSTART;TZID=Europe/Paris:20251124T163000
-DTEND;TZID=Europe/Paris:20251124T193000
+DTSTART;TZID=Europe/Paris:20251124T080000
+DTEND;TZID=Europe/Paris:20251124T110000
 UID:S126_19_CDE_1_1_48_0@ingemedia.fr
 DESCRIPTION:Séance: S126_19_CDE_1_1\nEnseignant: Sami Ben Amor\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
@@ -1280,9 +1280,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_A - Séance: S
  127_19_CDE_1_2
-DTSTART;TZID=Europe/Paris:20251215T140000
-DTEND;TZID=Europe/Paris:20251215T170000
-UID:S127_19_CDE_1_2_51_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251127T143000
+DTEND;TZID=Europe/Paris:20251127T173000
+UID:S127_19_CDE_1_2_48_3@ingemedia.fr
 DESCRIPTION:Séance: S127_19_CDE_1_2\nEnseignant: Sami Ben Amor\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1290,9 +1290,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_A - Séance: S
  128_19_CDE_1_3
-DTSTART;TZID=Europe/Paris:20251216T150000
-DTEND;TZID=Europe/Paris:20251216T180000
-UID:S128_19_CDE_1_3_51_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251208T093000
+DTEND;TZID=Europe/Paris:20251208T123000
+UID:S128_19_CDE_1_3_50_0@ingemedia.fr
 DESCRIPTION:Séance: S128_19_CDE_1_3\nEnseignant: Sami Ben Amor\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1300,9 +1300,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_A - Séance: S
  129_19_CDE_1_4
-DTSTART;TZID=Europe/Paris:20251218T150000
-DTEND;TZID=Europe/Paris:20251218T163000
-UID:S129_19_CDE_1_4_51_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251215T133000
+DTEND;TZID=Europe/Paris:20251215T150000
+UID:S129_19_CDE_1_4_51_0@ingemedia.fr
 DESCRIPTION:Séance: S129_19_CDE_1_4\nEnseignant: Sami Ben Amor\nGroupe: M
  aster_CDE_A\nType: TD\nDurée: 90 minutes
 LOCATION:Salle CO416
@@ -1310,9 +1310,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_B - Séance: S
  130_19_CDE_2_1
-DTSTART;TZID=Europe/Paris:20251215T100000
-DTEND;TZID=Europe/Paris:20251215T130000
-UID:S130_19_CDE_2_1_51_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251125T080000
+DTEND;TZID=Europe/Paris:20251125T110000
+UID:S130_19_CDE_2_1_48_1@ingemedia.fr
 DESCRIPTION:Séance: S130_19_CDE_2_1\nEnseignant: Sami Ben Amor\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1320,9 +1320,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_B - Séance: S
  131_19_CDE_2_2
-DTSTART;TZID=Europe/Paris:20251216T080000
-DTEND;TZID=Europe/Paris:20251216T110000
-UID:S131_19_CDE_2_2_51_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251128T100000
+DTEND;TZID=Europe/Paris:20251128T130000
+UID:S131_19_CDE_2_2_48_4@ingemedia.fr
 DESCRIPTION:Séance: S131_19_CDE_2_2\nEnseignant: Sami Ben Amor\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1330,9 +1330,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_B - Séance: S
  132_19_CDE_2_3
-DTSTART;TZID=Europe/Paris:20251218T090000
-DTEND;TZID=Europe/Paris:20251218T120000
-UID:S132_19_CDE_2_3_51_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251208T133000
+DTEND;TZID=Europe/Paris:20251208T163000
+UID:S132_19_CDE_2_3_50_0@ingemedia.fr
 DESCRIPTION:Séance: S132_19_CDE_2_3\nEnseignant: Sami Ben Amor\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
@@ -1340,9 +1340,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_B - Séance: S
  133_19_CDE_2_4
-DTSTART;TZID=Europe/Paris:20251219T080000
-DTEND;TZID=Europe/Paris:20251219T093000
-UID:S133_19_CDE_2_4_51_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251216T093000
+DTEND;TZID=Europe/Paris:20251216T110000
+UID:S133_19_CDE_2_4_51_1@ingemedia.fr
 DESCRIPTION:Séance: S133_19_CDE_2_4\nEnseignant: Sami Ben Amor\nGroupe: M
  aster_CDE_B\nType: TD\nDurée: 90 minutes
 LOCATION:Salle CO416
@@ -1350,9 +1350,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_A - Séance: S
  134_20_CDE_1_1
-DTSTART;TZID=Europe/Paris:20250915T153000
-DTEND;TZID=Europe/Paris:20250915T183000
-UID:S134_20_CDE_1_1_38_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251014T170000
+DTEND;TZID=Europe/Paris:20251014T200000
+UID:S134_20_CDE_1_1_42_1@ingemedia.fr
 DESCRIPTION:Séance: S134_20_CDE_1_1\nEnseignant: Alaric Tabaries\nGroupe:
   Master_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO510
@@ -1360,19 +1360,19 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_A - Séance: S
  135_20_CDE_1_2
-DTSTART;TZID=Europe/Paris:20251009T170000
-DTEND;TZID=Europe/Paris:20251009T200000
-UID:S135_20_CDE_1_2_41_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251016T143000
+DTEND;TZID=Europe/Paris:20251016T173000
+UID:S135_20_CDE_1_2_42_3@ingemedia.fr
 DESCRIPTION:Séance: S135_20_CDE_1_2\nEnseignant: Alaric Tabaries\nGroupe:
   Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO510
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_A - Séance: S
  136_20_CDE_1_3
-DTSTART;TZID=Europe/Paris:20251106T170000
-DTEND;TZID=Europe/Paris:20251106T200000
-UID:S136_20_CDE_1_3_45_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251103T100000
+DTEND;TZID=Europe/Paris:20251103T130000
+UID:S136_20_CDE_1_3_45_0@ingemedia.fr
 DESCRIPTION:Séance: S136_20_CDE_1_3\nEnseignant: Alaric Tabaries\nGroupe:
   Master_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO510
@@ -1380,9 +1380,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_A - Séance: S
  137_20_CDE_1_4
-DTSTART;TZID=Europe/Paris:20251211T093000
-DTEND;TZID=Europe/Paris:20251211T123000
-UID:S137_20_CDE_1_4_50_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251120T143000
+DTEND;TZID=Europe/Paris:20251120T173000
+UID:S137_20_CDE_1_4_47_3@ingemedia.fr
 DESCRIPTION:Séance: S137_20_CDE_1_4\nEnseignant: Alaric Tabaries\nGroupe:
   Master_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO615
@@ -1390,9 +1390,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_A - Séance: S
  138_20_CDE_1_5
-DTSTART;TZID=Europe/Paris:20251217T100000
-DTEND;TZID=Europe/Paris:20251217T120000
-UID:S138_20_CDE_1_5_51_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251208T133000
+DTEND;TZID=Europe/Paris:20251208T153000
+UID:S138_20_CDE_1_5_50_0@ingemedia.fr
 DESCRIPTION:Séance: S138_20_CDE_1_5\nEnseignant: Alaric Tabaries\nGroupe:
   Master_CDE_A\nType: TD\nDurée: 120 minutes
 LOCATION:Salle CO510
@@ -1400,9 +1400,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_B - Séance: S
  139_20_CDE_2_1
-DTSTART;TZID=Europe/Paris:20251008T093000
-DTEND;TZID=Europe/Paris:20251008T123000
-UID:S139_20_CDE_2_1_41_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251015T170000
+DTEND;TZID=Europe/Paris:20251015T200000
+UID:S139_20_CDE_2_1_42_2@ingemedia.fr
 DESCRIPTION:Séance: S139_20_CDE_2_1\nEnseignant: Alaric Tabaries\nGroupe:
   Master_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO510
@@ -1410,9 +1410,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_B - Séance: S
  140_20_CDE_2_2
-DTSTART;TZID=Europe/Paris:20251106T100000
-DTEND;TZID=Europe/Paris:20251106T130000
-UID:S140_20_CDE_2_2_45_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251023T093000
+DTEND;TZID=Europe/Paris:20251023T123000
+UID:S140_20_CDE_2_2_43_3@ingemedia.fr
 DESCRIPTION:Séance: S140_20_CDE_2_2\nEnseignant: Alaric Tabaries\nGroupe:
   Master_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO615
@@ -1420,9 +1420,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_B - Séance: S
  141_20_CDE_2_3
-DTSTART;TZID=Europe/Paris:20251210T170000
-DTEND;TZID=Europe/Paris:20251210T200000
-UID:S141_20_CDE_2_3_50_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251104T100000
+DTEND;TZID=Europe/Paris:20251104T130000
+UID:S141_20_CDE_2_3_45_1@ingemedia.fr
 DESCRIPTION:Séance: S141_20_CDE_2_3\nEnseignant: Alaric Tabaries\nGroupe:
   Master_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO615
@@ -1430,9 +1430,9 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_B - Séance: S
  142_20_CDE_2_4
-DTSTART;TZID=Europe/Paris:20251216T170000
-DTEND;TZID=Europe/Paris:20251216T200000
-UID:S142_20_CDE_2_4_51_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251121T080000
+DTEND;TZID=Europe/Paris:20251121T110000
+UID:S142_20_CDE_2_4_47_4@ingemedia.fr
 DESCRIPTION:Séance: S142_20_CDE_2_4\nEnseignant: Alaric Tabaries\nGroupe:
   Master_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO510
@@ -1440,80 +1440,80 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Développement et référencement (TD) - Master_CDE_B - Séance: S
  143_20_CDE_2_5
-DTSTART;TZID=Europe/Paris:20251217T153000
-DTEND;TZID=Europe/Paris:20251217T173000
-UID:S143_20_CDE_2_5_51_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251209T080000
+DTEND;TZID=Europe/Paris:20251209T100000
+UID:S143_20_CDE_2_5_50_1@ingemedia.fr
 DESCRIPTION:Séance: S143_20_CDE_2_5\nEnseignant: Alaric Tabaries\nGroupe:
   Master_CDE_B\nType: TD\nDurée: 120 minutes
-LOCATION:Salle CO615
+LOCATION:Salle CO510
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Design graphique (TD) - Master_CDE_A - Séance: S144_21_CDE_1_1
-DTSTART;TZID=Europe/Paris:20251016T140000
-DTEND;TZID=Europe/Paris:20251016T170000
-UID:S144_21_CDE_1_1_42_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250911T163000
+DTEND;TZID=Europe/Paris:20250911T193000
+UID:S144_21_CDE_1_1_37_3@ingemedia.fr
 DESCRIPTION:Séance: S144_21_CDE_1_1\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Design graphique (TD) - Master_CDE_A - Séance: S145_21_CDE_1_2
-DTSTART;TZID=Europe/Paris:20251017T090000
-DTEND;TZID=Europe/Paris:20251017T120000
-UID:S145_21_CDE_1_2_42_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250917T170000
+DTEND;TZID=Europe/Paris:20250917T200000
+UID:S145_21_CDE_1_2_38_2@ingemedia.fr
 DESCRIPTION:Séance: S145_21_CDE_1_2\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Design graphique (TD) - Master_CDE_A - Séance: S146_21_CDE_1_3
-DTSTART;TZID=Europe/Paris:20251212T170000
-DTEND;TZID=Europe/Paris:20251212T200000
-UID:S146_21_CDE_1_3_50_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250919T170000
+DTEND;TZID=Europe/Paris:20250919T200000
+UID:S146_21_CDE_1_3_38_4@ingemedia.fr
 DESCRIPTION:Séance: S146_21_CDE_1_3\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Design graphique (TD) - Master_CDE_A - Séance: S147_21_CDE_1_4
-DTSTART;TZID=Europe/Paris:20251216T110000
-DTEND;TZID=Europe/Paris:20251216T123000
-UID:S147_21_CDE_1_4_51_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251212T083000
+DTEND;TZID=Europe/Paris:20251212T100000
+UID:S147_21_CDE_1_4_50_4@ingemedia.fr
 DESCRIPTION:Séance: S147_21_CDE_1_4\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_A\nType: TD\nDurée: 90 minutes
 LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Design graphique (TD) - Master_CDE_B - Séance: S148_21_CDE_2_1
-DTSTART;TZID=Europe/Paris:20251016T170000
-DTEND;TZID=Europe/Paris:20251016T200000
-UID:S148_21_CDE_2_1_42_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250917T093000
+DTEND;TZID=Europe/Paris:20250917T123000
+UID:S148_21_CDE_2_1_38_2@ingemedia.fr
 DESCRIPTION:Séance: S148_21_CDE_2_1\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Design graphique (TD) - Master_CDE_B - Séance: S149_21_CDE_2_2
-DTSTART;TZID=Europe/Paris:20251017T130000
-DTEND;TZID=Europe/Paris:20251017T160000
-UID:S149_21_CDE_2_2_42_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250919T130000
+DTEND;TZID=Europe/Paris:20250919T160000
+UID:S149_21_CDE_2_2_38_4@ingemedia.fr
 DESCRIPTION:Séance: S149_21_CDE_2_2\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Design graphique (TD) - Master_CDE_B - Séance: S150_21_CDE_2_3
-DTSTART;TZID=Europe/Paris:20251215T170000
-DTEND;TZID=Europe/Paris:20251215T200000
-UID:S150_21_CDE_2_3_51_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250922T100000
+DTEND;TZID=Europe/Paris:20250922T130000
+UID:S150_21_CDE_2_3_39_0@ingemedia.fr
 DESCRIPTION:Séance: S150_21_CDE_2_3\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Design graphique (TD) - Master_CDE_B - Séance: S151_21_CDE_2_4
-DTSTART;TZID=Europe/Paris:20251217T090000
-DTEND;TZID=Europe/Paris:20251217T103000
+DTSTART;TZID=Europe/Paris:20251217T130000
+DTEND;TZID=Europe/Paris:20251217T143000
 UID:S151_21_CDE_2_4_51_2@ingemedia.fr
 DESCRIPTION:Séance: S151_21_CDE_2_4\nEnseignant: Asma Djebbi\nGroupe: Mas
  ter_CDE_B\nType: TD\nDurée: 90 minutes
@@ -1522,79 +1522,79 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analyse critique des médias (TD) - Master_CDE_A - Séance: S152_2
  2_CDE_1_1
-DTSTART;TZID=Europe/Paris:20250925T100000
-DTEND;TZID=Europe/Paris:20250925T130000
-UID:S152_22_CDE_1_1_39_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251014T140000
+DTEND;TZID=Europe/Paris:20251014T170000
+UID:S152_22_CDE_1_1_42_1@ingemedia.fr
 DESCRIPTION:Séance: S152_22_CDE_1_1\nEnseignant: Michel Durampart\nGroupe
  : Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO701
+LOCATION:Salle FA001
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analyse critique des médias (TD) - Master_CDE_A - Séance: S153_2
  2_CDE_1_2
-DTSTART;TZID=Europe/Paris:20251006T093000
-DTEND;TZID=Europe/Paris:20251006T123000
-UID:S153_22_CDE_1_2_41_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251015T093000
+DTEND;TZID=Europe/Paris:20251015T123000
+UID:S153_22_CDE_1_2_42_2@ingemedia.fr
 DESCRIPTION:Séance: S153_22_CDE_1_2\nEnseignant: Michel Durampart\nGroupe
  : Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO701
+LOCATION:Salle CO503
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analyse critique des médias (TD) - Master_CDE_A - Séance: S154_2
  2_CDE_1_3
-DTSTART;TZID=Europe/Paris:20251105T133000
-DTEND;TZID=Europe/Paris:20251105T163000
-UID:S154_22_CDE_1_3_45_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251125T100000
+DTEND;TZID=Europe/Paris:20251125T130000
+UID:S154_22_CDE_1_3_48_1@ingemedia.fr
 DESCRIPTION:Séance: S154_22_CDE_1_3\nEnseignant: Michel Durampart\nGroupe
  : Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO601
+LOCATION:Salle CO315
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analyse critique des médias (TD) - Master_CDE_A - Séance: S155_2
  2_CDE_1_4
-DTSTART;TZID=Europe/Paris:20251119T100000
-DTEND;TZID=Europe/Paris:20251119T130000
-UID:S155_22_CDE_1_4_47_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251125T143000
+DTEND;TZID=Europe/Paris:20251125T173000
+UID:S155_22_CDE_1_4_48_1@ingemedia.fr
 DESCRIPTION:Séance: S155_22_CDE_1_4\nEnseignant: Michel Durampart\nGroupe
  : Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO701
+LOCATION:Salle CO503
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analyse critique des médias (TD) - Master_CDE_A - Séance: S156_2
  2_CDE_1_5
-DTSTART;TZID=Europe/Paris:20251126T080000
-DTEND;TZID=Europe/Paris:20251126T100000
-UID:S156_22_CDE_1_5_48_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251217T110000
+DTEND;TZID=Europe/Paris:20251217T130000
+UID:S156_22_CDE_1_5_51_2@ingemedia.fr
 DESCRIPTION:Séance: S156_22_CDE_1_5\nEnseignant: Michel Durampart\nGroupe
  : Master_CDE_A\nType: TD\nDurée: 120 minutes
-LOCATION:Salle CO610
+LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analyse critique des médias (TD) - Master_CDE_B - Séance: S157_2
  3_CDE_2_1
-DTSTART;TZID=Europe/Paris:20251022T080000
-DTEND;TZID=Europe/Paris:20251022T110000
-UID:S157_23_CDE_2_1_43_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250909T080000
+DTEND;TZID=Europe/Paris:20250909T110000
+UID:S157_23_CDE_2_1_37_1@ingemedia.fr
 DESCRIPTION:Séance: S157_23_CDE_2_1\nEnseignant: Billel Aroufoune\nGroupe
  : Master_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO701
+LOCATION:Salle CO604
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analyse critique des médias (TD) - Master_CDE_B - Séance: S158_2
  3_CDE_2_2
-DTSTART;TZID=Europe/Paris:20251022T133000
-DTEND;TZID=Europe/Paris:20251022T163000
-UID:S158_23_CDE_2_2_43_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250911T090000
+DTEND;TZID=Europe/Paris:20250911T120000
+UID:S158_23_CDE_2_2_37_3@ingemedia.fr
 DESCRIPTION:Séance: S158_23_CDE_2_2\nEnseignant: Billel Aroufoune\nGroupe
  : Master_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle AMPHI110
+LOCATION:Salle CO416
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analyse critique des médias (TD) - Master_CDE_B - Séance: S159_2
  3_CDE_2_3
-DTSTART;TZID=Europe/Paris:20251023T130000
-DTEND;TZID=Europe/Paris:20251023T160000
-UID:S159_23_CDE_2_3_43_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250911T133000
+DTEND;TZID=Europe/Paris:20250911T163000
+UID:S159_23_CDE_2_3_37_3@ingemedia.fr
 DESCRIPTION:Séance: S159_23_CDE_2_3\nEnseignant: Billel Aroufoune\nGroupe
  : Master_CDE_B\nType: TD\nDurée: 180 minutes
 LOCATION:Salle CO315
@@ -1602,71 +1602,71 @@ END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analyse critique des médias (TD) - Master_CDE_B - Séance: S160_2
  3_CDE_2_4
-DTSTART;TZID=Europe/Paris:20251023T160000
-DTEND;TZID=Europe/Paris:20251023T190000
-UID:S160_23_CDE_2_4_43_3@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250911T163000
+DTEND;TZID=Europe/Paris:20250911T193000
+UID:S160_23_CDE_2_4_37_3@ingemedia.fr
 DESCRIPTION:Séance: S160_23_CDE_2_4\nEnseignant: Billel Aroufoune\nGroupe
  : Master_CDE_B\nType: TD\nDurée: 180 minutes
-LOCATION:Salle AMPHI110
+LOCATION:Salle CO510
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Analyse critique des médias (TD) - Master_CDE_B - Séance: S161_2
  3_CDE_2_5
-DTSTART;TZID=Europe/Paris:20251212T110000
-DTEND;TZID=Europe/Paris:20251212T130000
-UID:S161_23_CDE_2_5_50_4@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250917T140000
+DTEND;TZID=Europe/Paris:20250917T160000
+UID:S161_23_CDE_2_5_38_2@ingemedia.fr
 DESCRIPTION:Séance: S161_23_CDE_2_5\nEnseignant: Billel Aroufoune\nGroupe
  : Master_CDE_B\nType: TD\nDurée: 120 minutes
-LOCATION:Salle CO315
+LOCATION:Salle CO515
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication et storytelling (TD) - Master_CDE_A - Séance: S162_
  24_CDE_1_1
-DTSTART;TZID=Europe/Paris:20250924T153000
-DTEND;TZID=Europe/Paris:20250924T183000
-UID:S162_24_CDE_1_1_39_2@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250916T163000
+DTEND;TZID=Europe/Paris:20250916T193000
+UID:S162_24_CDE_1_1_38_1@ingemedia.fr
 DESCRIPTION:Séance: S162_24_CDE_1_1\nEnseignant: Billel Aroufoune\nGroupe
  : Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO416
+LOCATION:Salle CO601
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication et storytelling (TD) - Master_CDE_A - Séance: S163_
  24_CDE_1_2
-DTSTART;TZID=Europe/Paris:20251007T090000
-DTEND;TZID=Europe/Paris:20251007T120000
-UID:S163_24_CDE_1_2_41_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20250917T080000
+DTEND;TZID=Europe/Paris:20250917T110000
+UID:S163_24_CDE_1_2_38_2@ingemedia.fr
 DESCRIPTION:Séance: S163_24_CDE_1_2\nEnseignant: Billel Aroufoune\nGroupe
  : Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO610
+LOCATION:Salle CO615
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication et storytelling (TD) - Master_CDE_A - Séance: S164_
  24_CDE_1_3
-DTSTART;TZID=Europe/Paris:20251117T163000
-DTEND;TZID=Europe/Paris:20251117T193000
-UID:S164_24_CDE_1_3_47_0@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251013T083000
+DTEND;TZID=Europe/Paris:20251013T113000
+UID:S164_24_CDE_1_3_42_0@ingemedia.fr
 DESCRIPTION:Séance: S164_24_CDE_1_3\nEnseignant: Billel Aroufoune\nGroupe
  : Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle CO515
+LOCATION:Salle CO615
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication et storytelling (TD) - Master_CDE_A - Séance: S165_
  24_CDE_1_4
-DTSTART;TZID=Europe/Paris:20251118T100000
-DTEND;TZID=Europe/Paris:20251118T130000
-UID:S165_24_CDE_1_4_47_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251112T140000
+DTEND;TZID=Europe/Paris:20251112T170000
+UID:S165_24_CDE_1_4_46_2@ingemedia.fr
 DESCRIPTION:Séance: S165_24_CDE_1_4\nEnseignant: Billel Aroufoune\nGroupe
  : Master_CDE_A\nType: TD\nDurée: 180 minutes
-LOCATION:Salle AMPHI110
+LOCATION:Salle CO315
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Communication et storytelling (TD) - Master_CDE_A - Séance: S166_
  24_CDE_1_5
-DTSTART;TZID=Europe/Paris:20251118T173000
-DTEND;TZID=Europe/Paris:20251118T193000
-UID:S166_24_CDE_1_5_47_1@ingemedia.fr
+DTSTART;TZID=Europe/Paris:20251219T173000
+DTEND;TZID=Europe/Paris:20251219T193000
+UID:S166_24_CDE_1_5_51_4@ingemedia.fr
 DESCRIPTION:Séance: S166_24_CDE_1_5\nEnseignant: Billel Aroufoune\nGroupe
  : Master_CDE_A\nType: TD\nDurée: 120 minutes
-LOCATION:Salle CO315
+LOCATION:Salle CO610
 END:VEVENT
 END:VCALENDAR

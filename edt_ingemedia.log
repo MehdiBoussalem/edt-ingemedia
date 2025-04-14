@@ -249,6 +249,29 @@ Cours 24 (Communication et storytelling): durée totale=14.0h, max=3.0h, 4 séan
   Dernière séance TD créée: S166_24_CDE_1_5 (2.0h)
 Génération de 166 séances
 Génération de 166 séances
+Liste des jours fériés pour l'année scolaire:
+- 01/01/2024 : Jour de l'an
+- 01/04/2024 : Lundi de Pâques
+- 01/05/2024 : Fête du Travail
+- 08/05/2024 : Fête de la Victoire
+- 09/05/2024 : Ascension
+- 20/05/2024 : Lundi de Pentecôte
+- 14/07/2024 : Fête nationale
+- 15/08/2024 : Assomption
+- 01/11/2024 : Toussaint
+- 11/11/2024 : Armistice
+- 25/12/2024 : Noël
+- 01/01/2025 : Jour de l'an
+- 21/04/2025 : Lundi de Pâques
+- 01/05/2025 : Fête du Travail
+- 08/05/2025 : Fête de la Victoire
+- 29/05/2025 : Ascension
+- 09/06/2025 : Lundi de Pentecôte
+- 14/07/2025 : Fête nationale
+- 15/08/2025 : Assomption
+- 01/11/2025 : Toussaint
+- 11/11/2025 : Armistice
+- 25/12/2025 : Noël
 Génération de l'emploi du temps à partir du 12 septembre 2025...
 Création des variables de séance...
 Création des variables de séance...
@@ -1936,54 +1959,6 @@ Vérification disponibilité de Anne Gagnebien pour jour=lundi, periode=apres_mi
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Anne Gagnebien pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Anne Gagnebien pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Anne Gagnebien pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Anne Gagnebien pour jour=mercredi, periode=matin
@@ -4768,54 +4743,6 @@ Vérification disponibilité de Hervé Zénouda pour jour=lundi, periode=apres_m
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Hervé Zénouda pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Hervé Zénouda pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Hervé Zénouda pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Hervé Zénouda pour jour=mercredi, periode=matin
@@ -7600,54 +7527,6 @@ Vérification disponibilité de Michel Durampart pour jour=lundi, periode=apres_
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Michel Durampart pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Michel Durampart pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Michel Durampart pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Michel Durampart pour jour=mercredi, periode=matin
@@ -12064,54 +11943,6 @@ Vérification disponibilité de Philippe Bonfils pour jour=lundi, periode=apres_
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Philippe Bonfils pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: False
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: False
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: False
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: False
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: False
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: False
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: False
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: False
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: False
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: False
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Philippe Bonfils pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Philippe Bonfils pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Philippe Bonfils pour jour=mercredi, periode=matin
@@ -14896,54 +14727,6 @@ Vérification disponibilité de Lucia Granget pour jour=lundi, periode=apres_mid
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Lucia Granget pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Lucia Granget pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Lucia Granget pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Lucia Granget pour jour=mercredi, periode=matin
@@ -17728,54 +17511,6 @@ Vérification disponibilité de Véronique Ruiz pour jour=lundi, periode=apres_m
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Véronique Ruiz pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Véronique Ruiz pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Véronique Ruiz pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Véronique Ruiz pour jour=mercredi, periode=matin
@@ -20560,54 +20295,6 @@ Vérification disponibilité de Sami Ben Amor pour jour=lundi, periode=apres_mid
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Sami Ben Amor pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sami Ben Amor pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Sami Ben Amor pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: False
 Vérification disponibilité de Sami Ben Amor pour jour=mercredi, periode=matin
@@ -23392,54 +23079,6 @@ Vérification disponibilité de Billel Aroufoune pour jour=lundi, periode=apres_
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Billel Aroufoune pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Billel Aroufoune pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Billel Aroufoune pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Billel Aroufoune pour jour=mercredi, periode=matin
@@ -26224,54 +25863,6 @@ Vérification disponibilité de Sophie Monteil pour jour=lundi, periode=apres_mi
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Sophie Monteil pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Sophie Monteil pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Sophie Monteil pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Sophie Monteil pour jour=mercredi, periode=matin
@@ -29056,54 +28647,6 @@ Vérification disponibilité de Julien Chevron pour jour=lundi, periode=apres_mi
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Julien Chevron pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Julien Chevron pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Julien Chevron pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Julien Chevron pour jour=mercredi, periode=matin
@@ -31888,54 +31431,6 @@ Vérification disponibilité de Nathalie Trezza pour jour=lundi, periode=apres_m
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Nathalie Trezza pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Nathalie Trezza pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Nathalie Trezza pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Nathalie Trezza pour jour=mercredi, periode=matin
@@ -34720,54 +34215,6 @@ Vérification disponibilité de David Galli pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de David Galli pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de David Galli pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de David Galli pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de David Galli pour jour=mercredi, periode=matin
@@ -37552,54 +36999,6 @@ Vérification disponibilité de Asma Djebbi pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Asma Djebbi pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Asma Djebbi pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Asma Djebbi pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Asma Djebbi pour jour=mercredi, periode=matin
@@ -40384,54 +39783,6 @@ Vérification disponibilité de Alaric Tabaries pour jour=lundi, periode=apres_m
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Alaric Tabaries pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Alaric Tabaries pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Alaric Tabaries pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Alaric Tabaries pour jour=mercredi, periode=matin
@@ -43216,54 +42567,6 @@ Vérification disponibilité de Emilie Mitran pour jour=lundi, periode=apres_mid
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Emilie Mitran pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Emilie Mitran pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Emilie Mitran pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Emilie Mitran pour jour=mercredi, periode=matin
@@ -46048,54 +45351,6 @@ Vérification disponibilité de Gaelle Picut pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Gaelle Picut pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Gaelle Picut pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Gaelle Picut pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Gaelle Picut pour jour=mercredi, periode=matin
@@ -48880,54 +48135,6 @@ Vérification disponibilité de Eric Marmottans pour jour=lundi, periode=apres_m
 Disponibilité pour lundi apres_midi: True
 Vérification disponibilité de Eric Marmottans pour jour=lundi, periode=apres_midi
 Disponibilité pour lundi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=matin
-Disponibilité pour mardi matin: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
-Vérification disponibilité de Eric Marmottans pour jour=mardi, periode=apres_midi
-Disponibilité pour mardi apres_midi: True
 Vérification disponibilité de Eric Marmottans pour jour=mercredi, periode=matin
 Disponibilité pour mercredi matin: True
 Vérification disponibilité de Eric Marmottans pour jour=mercredi, periode=matin
@@ -50033,16 +49240,16 @@ Disponibilité pour vendredi apres_midi: True
 Vérification disponibilité de Eric Marmottans pour jour=vendredi, periode=apres_midi
 Disponibilité pour vendredi apres_midi: True
 Ajout de la contrainte d'unicité pour les groupes...
-Contraintes d'unicité optimisées pour les groupes: 15576 contraintes ajoutées
+Contraintes d'unicité optimisées pour les groupes: 15312 contraintes ajoutées
 Ajout de la contrainte d'unicité pour les salles...
 Ajout de la contrainte de pause déjeuner pour les enseignants...
 Ajout de la contrainte de pause déjeuner pour les groupes...
 Ajout de la contrainte de capacité des salles...
 Contraintes de capacité des salles: 0 contraintes ajoutées
 Ajout de la contrainte de type de salle pour TD...
-Contraintes de type de salle pour TD: 857211 contraintes ajoutées
+Contraintes de type de salle pour TD: 842682 contraintes ajoutées
 Ajout de la contrainte de disponibilité des salles...
-Contraintes de disponibilité des salles: 531496 contraintes ajoutées
+Contraintes de disponibilité des salles: 523731 contraintes ajoutées
 Ajout de la contrainte d'ordre des séances...
 Contraintes d'ordre des séances: 142 contraintes ajoutées
 Toutes les contraintes ont été ajoutées au modèle.
@@ -50050,33 +49257,33 @@ Toutes les contraintes ont été ajoutées au modèle.
 ================================================================================
 DÉMARRAGE DE LA RÉSOLUTION AVEC 16 THREADS PARALLÈLES
 ================================================================================
-Heure de début: 13:59:20
+Heure de début: 10:04:14
 Nombre de cœurs disponibles: 24
 Lancement de la résolution...
-Solution #1 trouvée après 0:01:38.192466
+Solution #1 trouvée après 0:01:27.553223
 Résolution terminée! 1 solutions trouvées.
-Heure de fin: 14:01:16
-Durée totale de résolution: 0:01:55.810430
+Heure de fin: 10:05:58
+Durée totale de résolution: 0:01:43.980636
 ================================================================================
-Nombre de branches explorées: 2990753
-Nombre de conflits: 1336
+Nombre de branches explorées: 2503015
+Nombre de conflits: 1669
 Nombre de solutions trouvées: CpSolverResponse summary:
 status: OPTIMAL
 objective: 0
 best_bound: 0
 integers: 166
-booleans: 681996
-conflicts: 1336
-branches: 2990753
-propagations: 32949638
-integer_propagations: 1854802
-restarts: 342
+booleans: 665212
+conflicts: 1669
+branches: 2503015
+propagations: 26823850
+integer_propagations: 1819343
+restarts: 350
 lp_iterations: 0
-walltime: 108.131
-usertime: 108.131
-deterministic_time: 297.994
+walltime: 96.8774
+usertime: 96.8774
+deterministic_time: 224.592
 gap_integral: 0
-solution_fingerprint: 0x12d0e9717f3a5750
+solution_fingerprint: 0xb3f3113620fba990
 
 ✅ Solution OPTIMALE trouvée ! Toutes les contraintes sont satisfaites.
 Export de l'emploi du temps vers un fichier ICS...

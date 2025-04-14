@@ -15,6 +15,7 @@ import multiprocessing
 import traceback
 import logging
 import sys
+import holidays
 
 
 # Configuration de la journalisation
@@ -1233,7 +1234,12 @@ if __name__ == "__main__":
         print(f"Génération de {len(seances)} séances")
 
         # Jours fériés en septembre 2025 (aucun)
-        jours_feries = []
+        jours_feries = holidays.France(years=[2024, 2025])
+
+        # Pour afficher tous les jours fériés récupérés
+        print("Liste des jours fériés pour l'année scolaire:")
+        for date, nom in sorted(jours_feries.items()):
+            print(f"- {date.strftime('%d/%m/%Y')} : {nom}")
 
         # Génération de l'emploi du temps à partir du 12 septembre 2025
         scheduler = EmploiDuTemps(
